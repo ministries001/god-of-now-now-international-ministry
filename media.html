@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Media | God of Now Now International Ministry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    color:#222;
+    background:#fff;
+    line-height:1.7;
+}
+
+:root{
+    --gold:#b58b28;
+    --light-gold:#e5c15b;
+    --black:#111;
+    --dark:#080808;
+    --cream:#f5f1e8;
+    --gray:#666;
+    --white:#fff;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(17,17,17,.98);
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.navbar{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#fff;
+    text-decoration:none;
+    font-size:19px;
+    font-weight:800;
+    line-height:1.2;
+    max-width:290px;
+}
+
+.logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+    margin-top:5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:19px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:var(--light-gold);
+}
+
+.menu-toggle{
+    display:none;
+    color:#fff;
+    font-size:29px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:440px;
+    background:
+        linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),
+        url("https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(45px,7vw,75px);
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#eee;
+    font-size:17px;
+}
+
+.gold-line{
+    width:80px;
+    height:4px;
+    background:var(--light-gold);
+    margin:22px auto;
+}
+
+/* ================= GENERAL ================= */
+
+section{
+    padding:85px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:48px;
+}
+
+.section-title h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    color:var(--black);
+}
+
+.section-title p{
+    max-width:700px;
+    margin:12px auto 0;
+    color:var(--gray);
+}
+
+/* ================= FEATURED SERMON ================= */
+
+.featured{
+    background:#fff;
+}
+
+.featured-grid{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.video-box{
+    min-height:390px;
+    border-radius:10px;
+    overflow:hidden;
+    position:relative;
+    background:
+        linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.55)),
+        url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1200&q=85")
+        center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.play-button{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:var(--gold);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    padding-left:5px;
+    box-shadow:0 5px 25px rgba(0,0,0,.35);
+}
+
+.featured-text .label{
+    color:var(--gold);
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.featured-text h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    line-height:1.2;
+    margin:12px 0 18px;
+}
+
+.featured-text p{
+    color:var(--gray);
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:var(--gold);
+    color:#fff;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#111;
+}
+
+.btn.dark{
+    background:#111;
+    margin-left:8px;
+}
+
+.btn.dark:hover{
+    background:var(--gold);
+}
+
+/* ================= SERMONS ================= */
+
+.sermons{
+    background:var(--cream);
+}
+
+.sermon-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.sermon-card{
+    background:#fff;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 7px 25px rgba(0,0,0,.07);
+    transition:.3s;
+}
+
+.sermon-card:hover{
+    transform:translateY(-7px);
+}
+
+.sermon-image{
+    height:210px;
+    position:relative;
+    background-position:center;
+    background-size:cover;
+}
+
+.sermon-1{
+    background-image:url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1000&q=85");
+}
+
+.sermon-2{
+    background-image:url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1000&q=85");
+}
+
+.sermon-3{
+    background-image:url("https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1000&q=85");
+}
+
+.play-small{
+    position:absolute;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:var(--gold);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:20px;
+}
+
+.sermon-content{
+    padding:24px;
+}
+
+.sermon-content .date{
+    color:var(--gold);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.sermon-content h3{
+    font-family:'Playfair Display',serif;
+    font-size:24px;
+    margin:8px 0 10px;
+}
+
+.sermon-content p{
+    color:var(--gray);
+    font-size:13px;
+}
+
+/* ================= AUDIO ================= */
+
+.audio-section{
+    background:#fff;
+}
+
+.audio-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.audio-card{
+    padding:25px;
+    border:1px solid #eee;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.audio-icon{
+    min-width:58px;
+    height:58px;
+    border-radius:50%;
+    background:var(--cream);
+    color:var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+}
+
+.audio-info{
+    flex:1;
+}
+
+.audio-info h3{
+    font-size:17px;
+    margin-bottom:4px;
+}
+
+.audio-info p{
+    color:var(--gray);
+    font-size:12px;
+}
+
+.audio-card audio{
+    width:100%;
+    max-width:260px;
+}
+
+/* ================= VIDEO ================= */
+
+.video-section{
+    background:#111;
+    color:#fff;
+}
+
+.video-section .section-title h2{
+    color:#fff;
+}
+
+.video-section .section-title p{
+    color:#bbb;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.video-card{
+    background:#1b1b1b;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+.video-card video{
+    width:100%;
+    display:block;
+    background:#000;
+    min-height:250px;
+}
+
+.video-info{
+    padding:20px;
+}
+
+.video-info h3{
+    font-family:'Playfair Display',serif;
+    font-size:23px;
+    margin-bottom:5px;
+}
+
+.video-info p{
+    color:#aaa;
+    font-size:13px;
+}
+
+/* ================= PHOTO MEDIA ================= */
+
+.photo-section{
+    background:var(--cream);
+}
+
+.photo-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.photo{
+    height:230px;
+    border-radius:7px;
+    background-position:center;
+    background-size:cover;
+    transition:.3s;
+}
+
+.photo:hover{
+    transform:scale(1.03);
+}
+
+.photo-1{
+    background-image:url("https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&w=700&q=85");
+}
+
+.photo-2{
+    background-image:url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=700&q=85");
+}
+
+.photo-3{
+    background-image:url("https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&w=700&q=85");
+}
+
+.photo-4{
+    background-image:url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=700&q=85");
+}
+
+/* ================= SCRIPTURE ================= */
+
+.scripture{
+    background:
+        linear-gradient(rgba(8,8,8,.90),rgba(8,8,8,.90)),
+        url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    color:#fff;
+    text-align:center;
+}
+
+.scripture blockquote{
+    max-width:850px;
+    margin:auto;
+    font-family:'Playfair Display',serif;
+    font-size:31px;
+    line-height:1.5;
+}
+
+.scripture cite{
+    display:block;
+    margin-top:20px;
+    color:var(--light-gold);
+    font-family:'Montserrat',sans-serif;
+    font-size:14px;
+    font-style:normal;
+    font-weight:700;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:var(--gold);
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:0 auto 28px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:var(--dark);
+    color:#ccc;
+    padding:65px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.4fr;
+    gap:40px;
+}
+
+.footer-col h3{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+.footer-col p{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col li{
+    margin-bottom:9px;
+}
+
+.footer-col a{
+    color:#bbb;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.footer-col a:hover{
+    color:var(--light-gold);
+}
+
+.footer-logo{
+    color:#fff;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.footer-logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+.copyright{
+    border-top:1px solid #292929;
+    margin-top:45px;
+    padding-top:22px;
+    text-align:center;
+    font-size:12px;
+    color:#888;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:24px;
+    z-index:999;
+    box-shadow:0 5px 18px rgba(0,0,0,.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .nav-links{
+        gap:11px;
+    }
+
+    .sermon-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .photo-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:800px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:78px;
+        left:0;
+        width:100%;
+        background:#111;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:20px 5%;
+        display:none;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+        padding:7px 0;
+    }
+
+    .featured-grid{
+        grid-template-columns:1fr;
+    }
+
+    .audio-grid,
+    .video-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:65px 0;
+    }
+
+    .hero{
+        min-height:390px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .section-title h2,
+    .featured-text h2,
+    .cta h2{
+        font-size:34px;
+    }
+
+    .sermon-grid{
+        grid-template-columns:1fr;
+    }
+
+    .photo-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .photo{
+        height:180px;
+    }
+
+    .audio-card{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .audio-card audio{
+        max-width:100%;
+    }
+
+    .scripture blockquote{
+        font-size:24px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+        max-width:280px;
+        margin:10px auto !important;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="index.html" class="logo">
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+<span>EXPERIENCE THE GOD OF NOW</span>
+</a>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="leadership.html">Leadership</a></li>
+<li><a href="ministries.html">Ministries</a></li>
+<li><a href="sermons.html">Sermons</a></li>
+<li><a href="media.html" class="active">Media</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="prayer.html">Prayer</a></li>
+<li><a href="give.html">Give</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<h1>Media</h1>
+
+<div class="gold-line"></div>
+
+<p>
+Watch, listen and stay connected with the messages, worship,
+programmes and activities of God of Now Now International Ministry.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= FEATURED ================= -->
+
+<section class="featured">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Featured Message</h2>
+
+<p>
+Be encouraged and strengthened through God's Word.
+</p>
+
+</div>
+
+<div class="featured-grid">
+
+<div class="video-box">
+
+<div class="play-button">
+▶
+</div>
+
+</div>
+
+<div class="featured-text">
+
+<div class="label">
+Featured Message
+</div>
+
+<h2>
+Experience The God Of Now
+</h2>
+
+<p>
+Welcome to the media centre of God of Now Now International Ministry.
+Here you can access messages, teachings, worship moments and
+other resources designed to strengthen your faith.
+</p>
+
+<p>
+Check back regularly for new messages and media from our services
+and special programmes.
+</p>
+
+<a href="sermons.html" class="btn">
+View Sermons
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SERMONS ================= -->
+
+<section class="sermons">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Latest Messages</h2>
+
+<p>
+Listen to messages that will encourage you and strengthen your
+walk with God.
+</p>
+
+</div>
+
+<div class="sermon-grid">
+
+<div class="sermon-card">
+
+<div class="sermon-image sermon-1">
+
+<div class="play-small">
+▶
+</div>
+
+</div>
+
+<div class="sermon-content">
+
+<div class="date">
+Sermon
+</div>
+
+<h3>
+The God Of Now
+</h3>
+
+<p>
+A message of faith, hope and confidence in God's presence.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="sermon-card">
+
+<div class="sermon-image sermon-2">
+
+<div class="play-small">
+▶
+</div>
+
+</div>
+
+<div class="sermon-content">
+
+<div class="date">
+Teaching
+</div>
+
+<h3>
+Walking In Faith
+</h3>
+
+<p>
+Discover how to trust God and walk confidently in His purpose.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="sermon-card">
+
+<div class="sermon-image sermon-3">
+
+<div class="play-small">
+▶
+</div>
+
+</div>
+
+<div class="sermon-content">
+
+<div class="date">
+Prayer
+</div>
+
+<h3>
+The Power Of Prayer
+</h3>
+
+<p>
+Learn to build a stronger prayer life and depend on God.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= AUDIO ================= -->
+
+<section class="audio-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Audio Messages</h2>
+
+<p>
+Listen to teachings and messages wherever you are.
+</p>
+
+</div>
+
+<div class="audio-grid">
+
+<div class="audio-card">
+
+<div class="audio-icon">
+♫
+</div>
+
+<div class="audio-info">
+
+<h3>
+Faith That Moves Mountains
+</h3>
+
+<p>
+God of Now Now International Ministry
+</p>
+
+</div>
+
+<audio controls>
+<source src="" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+</div>
+
+
+<div class="audio-card">
+
+<div class="audio-icon">
+♫
+</div>
+
+<div class="audio-info">
+
+<h3>
+Walking In God's Purpose
+</h3>
+
+<p>
+God of Now Now International Ministry
+</p>
+
+</div>
+
+<audio controls>
+<source src="" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+</div>
+
+
+<div class="audio-card">
+
+<div class="audio-icon">
+♫
+</div>
+
+<div class="audio-info">
+
+<h3>
+Prayer For Divine Intervention
+</h3>
+
+<p>
+Prayer Session
+</p>
+
+</div>
+
+<audio controls>
+<source src="" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+</div>
+
+
+<div class="audio-card">
+
+<div class="audio-icon">
+♫
+</div>
+
+<div class="audio-info">
+
+<h3>
+The Power Of God's Presence
+</h3>
+
+<p>
+Sunday Worship Service
+</p>
+
+</div>
+
+<audio controls>
+<source src="" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= VIDEO ================= -->
+
+<section class="video-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Video Messages</h2>
+
+<p>
+Add your church videos here so visitors can watch directly
+from the website.
+</p>
+
+</div>
+
+<div class="video-grid">
+
+<div class="video-card">
+
+<video controls poster="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1000&q=85">
+
+<source src="" type="video/mp4">
+
+Your browser does not support video playback.
+
+</video>
+
+<div class="video-info">
+
+<h3>
+Sunday Worship Service
+</h3>
+
+<p>
+God of Now Now International Ministry
+</p>
+
+</div>
+
+</div>
+
+
+<div class="video-card">
+
+<video controls poster="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1000&q=85">
+
+<source src="" type="video/mp4">
+
+Your browser does not support video playback.
+
+</video>
+
+<div class="video-info">
+
+<h3>
+Deliverance & Healing Service
+</h3>
+
+<p>
+Experience the God of Now
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PHOTO MEDIA ================= -->
+
+<section class="photo-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Media Highlights</h2>
+
+<p>
+Moments from worship, fellowship and ministry.
+</p>
+
+</div>
+
+<div class="photo-grid">
+
+<a href="gallery.html">
+<div class="photo photo-1"></div>
+</a>
+
+<a href="gallery.html">
+<div class="photo photo-2"></div>
+</a>
+
+<a href="gallery.html">
+<div class="photo photo-3"></div>
+</a>
+
+<a href="gallery.html">
+<div class="photo photo-4"></div>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SCRIPTURE ================= -->
+
+<section class="scripture">
+
+<div class="container">
+
+<blockquote>
+
+“So then faith cometh by hearing,
+and hearing by the word of God.”
+
+<cite>
+— Romans 10:17
+</cite>
+
+</blockquote>
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Stay Connected
+</h2>
+
+<p>
+Follow the ministry, listen to God's Word and share these messages
+with someone who needs encouragement.
+</p>
+
+<a href="sermons.html" class="btn">
+View Sermons
+</a>
+
+<a href="gallery.html" class="btn dark">
+View Gallery
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-col">
+
+<div class="footer-logo">
+
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+
+<span>
+EXPERIENCE THE GOD OF NOW
+</span>
+
+</div>
+
+<p>
+A ministry committed to helping people encounter God,
+grow in faith and discover their purpose.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="leadership.html">Leadership</a></li>
+<li><a href="ministries.html">Ministries</a></li>
+<li><a href="sermons.html">Sermons</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Explore</h3>
+
+<ul>
+
+<li><a href="media.html">Media</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="prayer.html">Prayer</a></li>
+<li><a href="give.html">Give</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Contact Us</h3>
+
+<p>
+7 Ishaga Street Agbelekale Ekoro-Command Road
+Abulegba Lagos Nigeria
+</p>
+
+<p>
+Office: +2348139102599
+</p>
+
+<p>
+Private: +2348150990331
+</p>
+
+<p>
+<a href="contact.html">
+Visit Contact Page →
+</a>
+</p>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 God of Now Now International Ministry.
+All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+
+<a
+class="whatsapp"
+href="https://wa.me/2348139102599"
+target="_blank"
+aria-label="WhatsApp">
+
+☎
+
+</a>
+
+
+<script>
+
+function toggleMenu(){
+
+document
+.getElementById("navLinks")
+.classList
+.toggle("show");
+
+}
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+document
+.getElementById("navLinks")
+.classList
+.remove("show");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
