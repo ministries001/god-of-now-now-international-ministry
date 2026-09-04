@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sitemap | God of Now Now International Ministry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    color:#222;
+    background:#fff;
+    line-height:1.7;
+}
+
+:root{
+    --gold:#b58b28;
+    --light-gold:#e5c15b;
+    --black:#111;
+    --dark:#080808;
+    --cream:#f5f1e8;
+    --gray:#666;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#111;
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.navbar{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#fff;
+    text-decoration:none;
+    font-size:19px;
+    font-weight:800;
+    line-height:1.2;
+    max-width:290px;
+}
+
+.logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+    margin-top:5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:var(--light-gold);
+}
+
+.menu-toggle{
+    display:none;
+    color:#fff;
+    font-size:29px;
+    cursor:pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:400px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+    url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(44px,7vw,72px);
+}
+
+.gold-line{
+    width:80px;
+    height:4px;
+    background:var(--light-gold);
+    margin:22px auto;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#eee;
+    font-size:16px;
+}
+
+
+/* ================= SITEMAP ================= */
+
+.sitemap-section{
+    padding:80px 0;
+    background:#fff;
+}
+
+.intro{
+    max-width:850px;
+    margin:0 auto 55px;
+    text-align:center;
+}
+
+.intro h2{
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.intro p{
+    color:var(--gray);
+    font-size:14px;
+}
+
+
+/* ================= GRID ================= */
+
+.sitemap-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.sitemap-card{
+    background:#fff;
+    border:1px solid #e8e8e8;
+    border-radius:8px;
+    padding:30px;
+    box-shadow:0 6px 22px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.sitemap-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 28px rgba(0,0,0,.1);
+}
+
+.sitemap-icon{
+    width:58px;
+    height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:var(--cream);
+    font-size:25px;
+    margin-bottom:17px;
+}
+
+.sitemap-card h3{
+    font-family:'Playfair Display',serif;
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.sitemap-card ul{
+    list-style:none;
+}
+
+.sitemap-card li{
+    margin-bottom:9px;
+}
+
+.sitemap-card a{
+    text-decoration:none;
+    color:#666;
+    font-size:13px;
+    transition:.3s;
+}
+
+.sitemap-card a:hover{
+    color:var(--gold);
+    padding-left:5px;
+}
+
+.sitemap-card a::before{
+    content:"→ ";
+    color:var(--gold);
+    font-weight:bold;
+}
+
+
+/* ================= SPECIAL CARD ================= */
+
+.special{
+    background:#111;
+    color:#fff;
+}
+
+.special h3{
+    color:#fff;
+}
+
+.special a{
+    color:#ccc;
+}
+
+.special a:hover{
+    color:var(--light-gold);
+}
+
+
+/* ================= CTA ================= */
+
+.cta{
+    background:var(--gold);
+    color:#fff;
+    text-align:center;
+    padding:75px 0;
+}
+
+.cta h2{
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.cta p{
+    max-width:720px;
+    margin:0 auto 25px;
+    font-size:14px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#fff;
+    color:#111;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#111;
+    color:#fff;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:var(--dark);
+    color:#ccc;
+    padding:65px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.4fr;
+    gap:40px;
+}
+
+.footer-col h3{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+.footer-col p{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col li{
+    margin-bottom:9px;
+}
+
+.footer-col a{
+    color:#bbb;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.footer-col a:hover{
+    color:var(--light-gold);
+}
+
+.footer-logo{
+    color:#fff;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.footer-logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+.copyright{
+    border-top:1px solid #292929;
+    margin-top:45px;
+    padding-top:22px;
+    text-align:center;
+    font-size:12px;
+    color:#888;
+}
+
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:24px;
+    z-index:999;
+    box-shadow:0 5px 18px rgba(0,0,0,.3);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .sitemap-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:800px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:78px;
+        left:0;
+        width:100%;
+        background:#111;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:20px 5%;
+        display:none;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+        padding:7px 0;
+    }
+
+}
+
+@media(max-width:650px){
+
+    .hero{
+        min-height:350px;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .intro h2{
+        font-size:33px;
+    }
+
+    .sitemap-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cta h2{
+        font-size:33px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        width:100%;
+        max-width:290px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="index.html" class="logo">
+
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+
+<span>
+EXPERIENCE THE GOD OF NOW
+</span>
+
+</a>
+
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+
+<ul class="nav-links">
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+<li>
+<a href="leadership.html">Leadership</a>
+</li>
+
+<li>
+<a href="ministries.html">Ministries</a>
+</li>
+
+<li>
+<a href="sermons.html">Sermons</a>
+</li>
+
+<li>
+<a href="media.html">Media</a>
+</li>
+
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+
+<li>
+<a href="news.html">News</a>
+</li>
+
+<li>
+<a href="activities.html">Activities</a>
+</li>
+
+<li>
+<a href="events.html">Events</a>
+</li>
+
+<li>
+<a href="prayer.html">Prayer</a>
+</li>
+
+<li>
+<a href="testimonies.html">Testimonies</a>
+</li>
+
+<li>
+<a href="faq.html">FAQ</a>
+</li>
+
+<li>
+<a href="give.html">Give</a>
+</li>
+
+<li>
+<a href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<h1>Website Sitemap</h1>
+
+<div class="gold-line"></div>
+
+<p>
+Find your way around the official website of
+God of Now Now International Ministry.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= SITEMAP ================= -->
+
+<section class="sitemap-section">
+
+<div class="container">
+
+
+<div class="intro">
+
+<h2>
+Explore Our Website
+</h2>
+
+<p>
+Use the links below to quickly access information about our church,
+ministries, programmes, services, media, resources and ways to
+connect with God of Now Now International Ministry.
+</p>
+
+</div>
+
+
+<div class="sitemap-grid">
+
+
+<!-- MAIN -->
+
+<div class="sitemap-card">
+
+<div class="sitemap-icon">
+🏠
+</div>
+
+<h3>
+Main Pages
+</h3>
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html">
+About Us
+</a>
+</li>
+
+<li>
+<a href="leadership.html">
+Church Leadership
+</a>
+</li>
+
+<li>
+<a href="ministries.html">
+Ministries
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Contact Us
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- WORSHIP -->
+
+<div class="sitemap-card">
+
+<div class="sitemap-icon">
+🙏
+</div>
+
+<h3>
+Worship & Faith
+</h3>
+
+<ul>
+
+<li>
+<a href="sermons.html">
+Sermons
+</a>
+</li>
+
+<li>
+<a href="prayer.html">
+Prayer
+</a>
+</li>
+
+<li>
+<a href="testimonies.html">
+Testimonies
+</a>
+</li>
+
+<li>
+<a href="resources.html">
+Resources
+</a>
+</li>
+
+<li>
+<a href="faq.html">
+Frequently Asked Questions
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- EVENTS -->
+
+<div class="sitemap-card">
+
+<div class="sitemap-icon">
+📅
+</div>
+
+<h3>
+Programmes & Events
+</h3>
+
+<ul>
+
+<li>
+<a href="activities.html">
+Weekly Activities
+</a>
+</li>
+
+<li>
+<a href="events.html">
+Church Events
+</a>
+</li>
+
+<li>
+<a href="programmes.html">
+Programmes
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- MEDIA -->
+
+<div class="sitemap-card">
+
+<div class="sitemap-icon">
+🎥
+</div>
+
+<h3>
+Media Centre
+</h3>
+
+<ul>
+
+<li>
+<a href="media.html">
+Media
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Photo Gallery
+</a>
+</li>
+
+<li>
+<a href="sermons.html">
+Sermon Library
+</a>
+</li>
+
+<li>
+<a href="news.html">
+Church News
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- CONNECT -->
+
+<div class="sitemap-card">
+
+<div class="sitemap-icon">
+🤝
+</div>
+
+<h3>
+Connect With Us
+</h3>
+
+<ul>
+
+<li>
+<a href="contact.html">
+Contact the Church
+</a>
+</li>
+
+<li>
+<a href="prayer.html">
+Submit a Prayer Request
+</a>
+</li>
+
+<li>
+<a href="testimonies.html">
+Share a Testimony
+</a>
+</li>
+
+<li>
+<a href="give.html">
+Give / Support the Ministry
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- LEGAL -->
+
+<div class="sitemap-card special">
+
+<div class="sitemap-icon">
+📜
+</div>
+
+<h3>
+Policies & Information
+</h3>
+
+<ul>
+
+<li>
+<a href="privacy.html">
+Privacy Policy
+</a>
+</li>
+
+<li>
+<a href="terms.html">
+Terms & Conditions
+</a>
+</li>
+
+<li>
+<a href="safeguarding.html">
+Safeguarding
+</a>
+</li>
+
+<li>
+<a href="sitemap.html">
+Sitemap
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- GIVE -->
+
+<div class="sitemap-card">
+
+<div class="sitemap-icon">
+💛
+</div>
+
+<h3>
+Give
+</h3>
+
+<ul>
+
+<li>
+<a href="give.html">
+Give Online
+</a>
+</li>
+
+<li>
+<a href="give.html#bank">
+Church Bank Details
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- CHURCH INFO -->
+
+<div class="sitemap-card">
+
+<div class="sitemap-icon">
+⛪
+</div>
+
+<h3>
+Church Information
+</h3>
+
+<ul>
+
+<li>
+<a href="about.html">
+Our Story
+</a>
+</li>
+
+<li>
+<a href="about.html#mission">
+Our Mission
+</a>
+</li>
+
+<li>
+<a href="about.html#vision">
+Our Vision
+</a>
+</li>
+
+<li>
+<a href="leadership.html">
+Our Leadership
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- LOCATION -->
+
+<div class="sitemap-card">
+
+<div class="sitemap-icon">
+📍
+</div>
+
+<h3>
+Church Location
+</h3>
+
+<ul>
+
+<li>
+<a href="contact.html">
+Church Address
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Office Contact
+</a>
+</li>
+
+<li>
+<a href="contact.html">
+Private Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+We Would Love to Hear From You
+</h2>
+
+<p>
+Whether you need prayer, want to attend a service, learn more
+about our ministry or simply connect with us, we are here for you.
+</p>
+
+<a href="contact.html" class="btn">
+CONTACT THE CHURCH
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div class="footer-col">
+
+<div class="footer-logo">
+
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+
+<span>
+EXPERIENCE THE GOD OF NOW
+</span>
+
+</div>
+
+<p>
+A ministry committed to helping people encounter God,
+grow in faith and discover their purpose.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>
+Quick Links
+</h3>
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+<li>
+<a href="leadership.html">
+Leadership
+</a>
+</li>
+
+<li>
+<a href="ministries.html">
+Ministries
+</a>
+</li>
+
+<li>
+<a href="sermons.html">
+Sermons
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>
+Explore
+</h3>
+
+<ul>
+
+<li>
+<a href="media.html">
+Media
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>
+
+<li>
+<a href="news.html">
+News
+</a>
+</li>
+
+<li>
+<a href="activities.html">
+Activities
+</a>
+</li>
+
+<li>
+<a href="events.html">
+Events
+</a>
+</li>
+
+<li>
+<a href="prayer.html">
+Prayer
+</a>
+</li>
+
+<li>
+<a href="testimonies.html">
+Testimonies
+</a>
+</li>
+
+<li>
+<a href="resources.html">
+Resources
+</a>
+</li>
+
+<li>
+<a href="give.html">
+Give
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>
+Contact Us
+</h3>
+
+<p>
+7 Ishaga Street Agbelekale<br>
+Ekoro-Command Road<br>
+Abulegba, Lagos, Nigeria
+</p>
+
+<p>
+Office:<br>
++2348139102599
+</p>
+
+<p>
+Private:<br>
++2348150990331
+</p>
+
+<p>
+
+<a href="contact.html">
+Visit Contact Page →
+</a>
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 God of Now Now International Ministry.
+All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/2348139102599"
+target="_blank"
+aria-label="Contact us on WhatsApp">
+
+☎
+
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function toggleMenu(){
+
+document
+.querySelector(".nav-links")
+.classList
+.toggle("show");
+
+}
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+document
+.querySelector(".nav-links")
+.classList
+.remove("show");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
