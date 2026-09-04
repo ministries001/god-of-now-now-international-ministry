@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Ministries | God of Now Now International Ministry</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    :root {
+      --gold: #b58b28;
+      --gold-light: #e5c15b;
+      --black: #111111;
+      --dark: #080808;
+      --cream: #f5f1e8;
+      --white: #ffffff;
+      --gray: #666;
+    }
+
+    /* NAVIGATION */
+    header {
+      background: rgba(8, 8, 8, 0.98);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      min-height: 80px;
+      padding: 0 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      color: var(--white);
+      font-size: 19px;
+      font-weight: 800;
+      line-height: 1.2;
+      max-width: 240px;
+    }
+
+    .logo span {
+      color: var(--gold-light);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+      align-items: center;
+    }
+
+    nav a {
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--gold-light);
+    }
+
+    .give-btn {
+      background: var(--gold);
+      padding: 11px 18px;
+      border-radius: 4px;
+      color: #fff !important;
+    }
+
+    .give-btn:hover {
+      background: var(--gold-light);
+      color: #111 !important;
+    }
+
+    .menu-toggle {
+      display: none;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* PAGE HERO */
+    .page-hero {
+      min-height: 430px;
+      background:
+        linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.72)),
+        url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      color: #fff;
+    }
+
+    .hero-content .small-title {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(42px, 6vw, 70px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      max-width: 700px;
+      margin: auto;
+      color: #eee;
+      font-size: 16px;
+    }
+
+    /* INTRO */
+    .intro {
+      padding: 90px 20px 60px;
+      background: #fff;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 55px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--black);
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.2;
+      margin-bottom: 17px;
+    }
+
+    .section-heading p {
+      color: var(--gray);
+      font-size: 15px;
+    }
+
+    /* MINISTRIES */
+    .ministries {
+      background: var(--cream);
+      padding: 85px 20px;
+    }
+
+    .ministry-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .ministry-card {
+      background: #fff;
+      padding: 35px 25px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.07);
+      border-bottom: 3px solid transparent;
+      transition: .35s ease;
+    }
+
+    .ministry-card:hover {
+      transform: translateY(-8px);
+      border-bottom-color: var(--gold);
+      box-shadow: 0 15px 35px rgba(0,0,0,.12);
+    }
+
+    .icon {
+      width: 75px;
+      height: 75px;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      background: #f7efd9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+
+    .ministry-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 23px;
+      margin-bottom: 12px;
+      color: var(--black);
+    }
+
+    .ministry-card p {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.8;
+    }
+
+    /* FEATURE SECTION */
+    .feature {
+      padding: 95px 20px;
+      background: #fff;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .feature-image {
+      height: 500px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0 15px 40px rgba(0,0,0,.15);
+    }
+
+    .feature-content .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 13px;
+    }
+
+    .feature-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 47px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .feature-content p {
+      color: var(--gray);
+      margin-bottom: 18px;
+      font-size: 15px;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-top: 25px;
+    }
+
+    .feature-list li {
+      margin-bottom: 13px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      color: var(--gold);
+      font-weight: 900;
+      margin-right: 12px;
+    }
+
+    /* SCRIPTURE */
+    .scripture {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .scripture-inner {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .scripture-mark {
+      color: var(--gold-light);
+      font-size: 55px;
+      font-family: Georgia, serif;
+      margin-bottom: 15px;
+    }
+
+    .scripture blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(25px, 4vw, 40px);
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    .scripture cite {
+      color: var(--gold-light);
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    /* CTA */
+    .cta {
+      background:
+        linear-gradient(rgba(181,139,40,.92), rgba(181,139,40,.92)),
+        url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      padding: 85px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 50px);
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 15px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 13px;
+      transition: .3s;
+    }
+
+    .cta-btn:hover {
+      background: #fff;
+      color: #111;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #070707;
+      color: #bbb;
+      padding: 70px 20px 25px;
+    }
+
+    .footer-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 45px;
+    }
+
+    .footer-col h3 {
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .footer-brand {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .footer-brand span {
+      color: var(--gold-light);
+    }
+
+    .footer-col p {
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+
+    .footer-col a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-bottom {
+      max-width: 1150px;
+      margin: 50px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #292929;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 950px) {
+      .ministry-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      nav ul {
+        gap: 15px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #080808;
+        display: none;
+      }
+
+      nav.active {
+        display: block;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px;
+        gap: 18px;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-image {
+        height: 380px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .ministry-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .navbar {
+        padding: 0 18px;
+      }
+
+      .logo {
+        font-size: 16px;
+        max-width: 210px;
+      }
+
+      .page-hero {
+        min-height: 380px;
+      }
+
+      .ministries,
+      .feature,
+      .intro {
+        padding-top: 65px;
+        padding-bottom: 65px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+
+    <a href="index.html" class="logo">
+      GOD OF NOW NOW <span>INTERNATIONAL MINISTRY</span>
+    </a>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="ministries.html" class="active">Ministries</a></li>
+        <li><a href="sermons.html">Sermons</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="give.html" class="give-btn">Give</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-content">
+
+    <div class="small-title">Serving Together</div>
+
+    <h1>Our Ministries</h1>
+
+    <p>
+      Discover opportunities to grow in faith, serve others,
+      build meaningful relationships and become part of what
+      God is doing through our ministry.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- INTRO -->
+<section class="intro">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Get Involved</div>
+
+      <h2>There Is A Place For You</h2>
+
+      <p>
+        At God of Now Now International Ministry, we believe that
+        every believer has a purpose. Our ministries provide an
+        opportunity for people of every age and background to
+        connect, grow and serve.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- MINISTRIES -->
+<section class="ministries">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Our Departments</div>
+
+      <h2>Ministries That Make A Difference</h2>
+
+      <p>
+        Find a ministry where your gifts, passion and faith can
+        make an impact.
+      </p>
+
+    </div>
+
+
+    <div class="ministry-grid">
+
+      <div class="ministry-card">
+        <div class="icon">🙏</div>
+        <h3>Prayer Ministry</h3>
+        <p>
+          A dedicated ministry committed to intercession,
+          spiritual growth and standing in prayer for families,
+          communities and nations.
+        </p>
+      </div>
+
+
+      <div class="ministry-card">
+        <div class="icon">👨</div>
+        <h3>Men's Ministry</h3>
+        <p>
+          Helping men become strong men of faith, responsible
+          leaders and positive influences in their homes and
+          communities.
+        </p>
+      </div>
+
+
+      <div class="ministry-card">
+        <div class="icon">👩</div>
+        <h3>Women's Ministry</h3>
+        <p>
+          Empowering women spiritually and practically while
+          encouraging fellowship, purpose, leadership and
+          service.
+        </p>
+      </div>
+
+
+      <div class="ministry-card">
+        <div class="icon">🌟</div>
+        <h3>Youth Ministry</h3>
+        <p>
+          Equipping young people with biblical values, mentorship,
+          leadership skills and a strong foundation for the future.
+        </p>
+      </div>
+
+
+      <div class="ministry-card">
+        <div class="icon">👧</div>
+        <h3>Children's Ministry</h3>
+        <p>
+          Creating a safe and exciting environment where children
+          can learn God's Word, discover their identity and grow
+          in faith.
+        </p>
+      </div>
+
+
+      <div class="ministry-card">
+        <div class="icon">📖</div>
+        <h3>Evangelism</h3>
+        <p>
+          Taking the message of Christ beyond the church walls
+          and reaching individuals and communities with the
+          Gospel.
+        </p>
+      </div>
+
+
+      <div class="ministry-card">
+        <div class="icon">🎵</div>
+        <h3>Choir & Music</h3>
+        <p>
+          Using music and worship to glorify God, encourage
+          believers and create an atmosphere where people can
+          encounter His presence.
+        </p>
+      </div>
+
+
+      <div class="ministry-card">
+        <div class="icon">📱</div>
+        <h3>Media Ministry</h3>
+        <p>
+          Sharing sermons, worship, announcements and the message
+          of the ministry through digital media and technology.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FEATURE -->
+<section class="feature">
+
+  <div class="container">
+
+    <div class="feature-grid">
+
+      <div>
+
+        <img
+          class="feature-image"
+          src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=85"
+          alt="Church members worshipping together"
+        >
+
+      </div>
+
+
+      <div class="feature-content">
+
+        <div class="eyebrow">Serving With Purpose</div>
+
+        <h2>Discover Your Place In God's Work</h2>
+
+        <p>
+          The church is more than a building. It is a family of
+          believers working together to demonstrate the love of
+          Christ and bring hope to people.
+        </p>
+
+        <p>
+          Whether you are passionate about prayer, music,
+          evangelism, children, young people, community service
+          or media, there is an opportunity for you to serve.
+        </p>
+
+        <ul class="feature-list">
+          <li>Grow spiritually</li>
+          <li>Build meaningful relationships</li>
+          <li>Discover and develop your gifts</li>
+          <li>Serve your community</li>
+          <li>Make an eternal impact</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SCRIPTURE -->
+<section class="scripture">
+
+  <div class="scripture-inner">
+
+    <div class="scripture-mark">“</div>
+
+    <blockquote>
+      “As each one has received a gift, minister it to one
+      another, as good stewards of the manifold grace of God.”
+    </blockquote>
+
+    <cite>1 PETER 4:10</cite>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+  <div class="container">
+
+    <h2>Ready To Get Involved?</h2>
+
+    <p>
+      Join us as we serve God, strengthen families, reach
+      communities and make a difference together.
+    </p>
+
+    <a href="contact.html" class="cta-btn">
+      CONTACT US
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="footer-grid">
+
+    <div class="footer-col">
+
+      <div class="footer-brand">
+        GOD OF NOW NOW <span>INTERNATIONAL MINISTRY</span>
+      </div>
+
+      <p>
+        Experience the God of Now. A Christ-centered ministry
+        committed to faith, prayer, worship, evangelism and
+        transforming lives through the Word of God.
+      </p>
+
+    </div>
+
+
+    <div class="footer-col">
+
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="ministries.html">Ministries</a></li>
+        <li><a href="sermons.html">Sermons</a></li>
+      </ul>
+
+    </div>
+
+
+    <div class="footer-col">
+
+      <h3>Explore</h3>
+
+      <ul>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="prayer.html">Prayer Request</a></li>
+        <li><a href="give.html">Give / Offering</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+    </div>
+
+
+    <div class="footer-col">
+
+      <h3>Contact</h3>
+
+      <p>
+        Your Church Location
+      </p>
+
+      <p>
+        +234 XXX XXX XXXX
+      </p>
+
+      <p>
+        info@godofnownowministry.org
+      </p>
+
+      <p>
+        Sunday Worship: 8:00 AM
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    © 2026 God of Now Now International Ministry.
+    All Rights Reserved.
+
+  </div>
+
+</footer>
+
+
+<script>
+  function toggleMenu() {
+    document.getElementById("mainNav").classList.toggle("active");
+  }
+
+  document.querySelectorAll("#mainNav a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      document.getElementById("mainNav").classList.remove("active");
+    });
+  });
+</script>
+
+</body>
+</html>
