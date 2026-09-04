@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Privacy Policy | God of Now Now International Ministry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    color:#222;
+    background:#fff;
+    line-height:1.8;
+}
+
+:root{
+    --gold:#b58b28;
+    --light-gold:#e5c15b;
+    --black:#111;
+    --dark:#080808;
+    --cream:#f5f1e8;
+    --gray:#666;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#111;
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.navbar{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#fff;
+    text-decoration:none;
+    font-size:19px;
+    font-weight:800;
+    line-height:1.2;
+    max-width:290px;
+}
+
+.logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+    margin-top:5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:var(--light-gold);
+}
+
+.menu-toggle{
+    display:none;
+    color:#fff;
+    font-size:29px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:400px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.82)),
+    url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(42px,7vw,70px);
+}
+
+.gold-line{
+    width:80px;
+    height:4px;
+    background:var(--light-gold);
+    margin:22px auto;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#eee;
+    font-size:16px;
+}
+
+/* ================= POLICY ================= */
+
+.policy-section{
+    padding:80px 0;
+    background:#fff;
+}
+
+.policy-container{
+    max-width:950px;
+    margin:auto;
+}
+
+.last-updated{
+    background:var(--cream);
+    border-left:4px solid var(--gold);
+    padding:18px 22px;
+    margin-bottom:40px;
+    font-size:13px;
+    color:#555;
+}
+
+.policy-block{
+    margin-bottom:40px;
+}
+
+.policy-block h2{
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    margin-bottom:13px;
+    color:#111;
+}
+
+.policy-block p{
+    color:#555;
+    font-size:14px;
+    margin-bottom:13px;
+}
+
+.policy-block ul{
+    padding-left:25px;
+    color:#555;
+    font-size:14px;
+}
+
+.policy-block li{
+    margin-bottom:8px;
+}
+
+.contact-box{
+    background:var(--cream);
+    padding:30px;
+    border-radius:7px;
+    margin-top:20px;
+}
+
+.contact-box h3{
+    font-family:'Playfair Display',serif;
+    font-size:25px;
+    margin-bottom:10px;
+}
+
+.contact-box p{
+    margin-bottom:8px;
+}
+
+.contact-box a{
+    color:var(--gold);
+    text-decoration:none;
+    font-weight:700;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:var(--gold);
+    color:#fff;
+    text-align:center;
+    padding:75px 0;
+}
+
+.cta h2{
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:0 auto 25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#fff;
+    color:#111;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#111;
+    color:#fff;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:var(--dark);
+    color:#ccc;
+    padding:65px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.4fr;
+    gap:40px;
+}
+
+.footer-col h3{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+.footer-col p{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col li{
+    margin-bottom:9px;
+}
+
+.footer-col a{
+    color:#bbb;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.footer-col a:hover{
+    color:var(--light-gold);
+}
+
+.footer-logo{
+    color:#fff;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.footer-logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+.copyright{
+    border-top:1px solid #292929;
+    margin-top:45px;
+    padding-top:22px;
+    text-align:center;
+    font-size:12px;
+    color:#888;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:24px;
+    z-index:999;
+    box-shadow:0 5px 18px rgba(0,0,0,.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .nav-links{
+        gap:10px;
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:800px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:78px;
+        left:0;
+        width:100%;
+        background:#111;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:20px 5%;
+        display:none;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+        padding:7px 0;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+        min-height:350px;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .policy-section{
+        padding:60px 0;
+    }
+
+    .policy-block h2{
+        font-size:27px;
+    }
+
+    .cta h2{
+        font-size:33px;
+    }
+
+    .btn{
+        width:100%;
+        max-width:280px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="index.html" class="logo">
+
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+
+<span>
+EXPERIENCE THE GOD OF NOW
+</span>
+
+</a>
+
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+
+<ul class="nav-links">
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+<li>
+<a href="leadership.html">Leadership</a>
+</li>
+
+<li>
+<a href="ministries.html">Ministries</a>
+</li>
+
+<li>
+<a href="sermons.html">Sermons</a>
+</li>
+
+<li>
+<a href="media.html">Media</a>
+</li>
+
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+
+<li>
+<a href="news.html">News</a>
+</li>
+
+<li>
+<a href="activities.html">Activities</a>
+</li>
+
+<li>
+<a href="events.html">Events</a>
+</li>
+
+<li>
+<a href="prayer.html">Prayer</a>
+</li>
+
+<li>
+<a href="testimonies.html">Testimonies</a>
+</li>
+
+<li>
+<a href="faq.html">FAQ</a>
+</li>
+
+<li>
+<a href="give.html">Give</a>
+</li>
+
+<li>
+<a href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<h1>Privacy Policy</h1>
+
+<div class="gold-line"></div>
+
+<p>
+Your privacy matters to God of Now Now International Ministry.
+This page explains how information submitted through our website
+may be handled.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= POLICY ================= -->
+
+<section class="policy-section">
+
+<div class="container policy-container">
+
+
+<div class="last-updated">
+
+<strong>Last Updated:</strong> September 4, 2026
+
+</div>
+
+
+<!-- 1 -->
+
+<div class="policy-block">
+
+<h2>1. Introduction</h2>
+
+<p>
+God of Now Now International Ministry respects the privacy of
+everyone who visits or interacts with this website.
+</p>
+
+<p>
+This Privacy Policy explains the general ways in which information
+may be collected, used and protected when you use our website.
+</p>
+
+</div>
+
+
+<!-- 2 -->
+
+<div class="policy-block">
+
+<h2>2. Information We May Collect</h2>
+
+<p>
+Depending on how you use the website, we may receive information
+that you voluntarily provide to us, including:
+</p>
+
+<ul>
+
+<li>Your name.</li>
+
+<li>Phone number.</li>
+
+<li>Email address, where provided.</li>
+
+<li>Prayer requests.</li>
+
+<li>Testimonies submitted through the website.</li>
+
+<li>Messages or enquiries sent through contact forms.</li>
+
+<li>Other information you voluntarily provide.</li>
+
+</ul>
+
+</div>
+
+
+<!-- 3 -->
+
+<div class="policy-block">
+
+<h2>3. Prayer Requests</h2>
+
+<p>
+Prayer requests may contain personal or sensitive information.
+We encourage visitors to share only information that they are
+comfortable providing.
+</p>
+
+<p>
+Prayer requests are intended to be used for ministry, prayer and
+pastoral purposes.
+</p>
+
+</div>
+
+
+<!-- 4 -->
+
+<div class="policy-block">
+
+<h2>4. Testimonies</h2>
+
+<p>
+If you submit a testimony, the ministry may review the information
+before deciding whether it can be published on the church website,
+social media platforms or other ministry communication channels.
+</p>
+
+<p>
+Personal information will not intentionally be published as part
+of a testimony without appropriate consideration of the information
+provided and any permission required.
+</p>
+
+</div>
+
+
+<!-- 5 -->
+
+<div class="policy-block">
+
+<h2>5. How We May Use Information</h2>
+
+<p>
+Information voluntarily provided to the ministry may be used to:
+</p>
+
+<ul>
+
+<li>Respond to enquiries.</li>
+
+<li>Respond to prayer requests.</li>
+
+<li>Communicate with members and visitors.</li>
+
+<li>Process ministry-related requests.</li>
+
+<li>Improve the church website.</li>
+
+<li>Organise church activities and programmes.</li>
+
+<li>Provide information about church events and activities.</li>
+
+</ul>
+
+</div>
+
+
+<!-- 6 -->
+
+<div class="policy-block">
+
+<h2>6. Information Protection</h2>
+
+<p>
+We take reasonable steps to protect information provided to the
+ministry from unauthorized access, misuse or disclosure.
+</p>
+
+<p>
+However, no internet transmission or electronic storage system
+can be guaranteed to be completely secure.
+</p>
+
+</div>
+
+
+<!-- 7 -->
+
+<div class="policy-block">
+
+<h2>7. Third-Party Services</h2>
+
+<p>
+Some parts of the website may use third-party services such as
+video platforms, social media platforms, mapping services,
+hosting providers or other external services.
+</p>
+
+<p>
+Those services may have their own privacy policies and terms.
+We encourage visitors to review the policies of external services
+when using them.
+</p>
+
+</div>
+
+
+<!-- 8 -->
+
+<div class="policy-block">
+
+<h2>8. Cookies</h2>
+
+<p>
+The website may use cookies or similar technologies where necessary
+for website functionality, security, performance or analytics.
+</p>
+
+<p>
+You may be able to control cookies through your browser settings.
+Disabling certain cookies may affect some website features.
+</p>
+
+</div>
+
+
+<!-- 9 -->
+
+<div class="policy-block">
+
+<h2>9. Children's Privacy</h2>
+
+<p>
+Parents and guardians are encouraged to supervise children's use
+of online services.
+</p>
+
+<p>
+We do not knowingly request unnecessary personal information from
+children through this website.
+</p>
+
+</div>
+
+
+<!-- 10 -->
+
+<div class="policy-block">
+
+<h2>10. External Links</h2>
+
+<p>
+Our website may contain links to external websites, social media
+pages and other online resources.
+</p>
+
+<p>
+God of Now Now International Ministry is not responsible for the
+privacy practices or content of external websites.
+</p>
+
+</div>
+
+
+<!-- 11 -->
+
+<div class="policy-block">
+
+<h2>11. Your Choices</h2>
+
+<p>
+You may choose not to provide certain information when using the
+website. However, some services or features may require information
+in order to respond to your request.
+</p>
+
+<p>
+If you have previously provided information to the ministry and
+would like to ask about it, please contact us.
+</p>
+
+</div>
+
+
+<!-- 12 -->
+
+<div class="policy-block">
+
+<h2>12. Changes to This Policy</h2>
+
+<p>
+The ministry may update this Privacy Policy from time to time to
+reflect changes in the website, ministry operations or applicable
+requirements.
+</p>
+
+<p>
+Any updated version will be published on this page.
+</p>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div class="policy-block">
+
+<h2>13. Contact Us</h2>
+
+<p>
+If you have questions about this Privacy Policy or how information
+submitted through the website is handled, please contact the church.
+</p>
+
+
+<div class="contact-box">
+
+<h3>
+God of Now Now International Ministry
+</h3>
+
+<p>
+<strong>Church Address:</strong><br>
+
+7 Ishaga Street Agbelekale,
+Ekoro-Command Road,
+Abulegba, Lagos, Nigeria.
+</p>
+
+<p>
+<strong>Office Line:</strong><br>
+
+<a href="tel:+2348139102599">
++2348139102599
+</a>
+</p>
+
+<p>
+<strong>Private Line:</strong><br>
+
+<a href="tel:+2348150990331">
++2348150990331
+</a>
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+We Are Here to Serve
+</h2>
+
+<p>
+For questions, prayer requests or other enquiries,
+please contact God of Now Now International Ministry.
+</p>
+
+<a href="contact.html" class="btn">
+Contact The Church
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div class="footer-col">
+
+<div class="footer-logo">
+
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+
+<span>
+EXPERIENCE THE GOD OF NOW
+</span>
+
+</div>
+
+<p>
+A ministry committed to helping people encounter God,
+grow in faith and discover their purpose.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+<li>
+<a href="leadership.html">Leadership</a>
+</li>
+
+<li>
+<a href="ministries.html">Ministries</a>
+</li>
+
+<li>
+<a href="sermons.html">Sermons</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Explore</h3>
+
+<ul>
+
+<li>
+<a href="media.html">Media</a>
+</li>
+
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+
+<li>
+<a href="news.html">News</a>
+</li>
+
+<li>
+<a href="activities.html">Activities</a>
+</li>
+
+<li>
+<a href="events.html">Events</a>
+</li>
+
+<li>
+<a href="prayer.html">Prayer</a>
+</li>
+
+<li>
+<a href="testimonies.html">Testimonies</a>
+</li>
+
+<li>
+<a href="faq.html">FAQ</a>
+</li>
+
+<li>
+<a href="give.html">Give</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Contact Us</h3>
+
+<p>
+7 Ishaga Street Agbelekale
+Ekoro-Command Road
+Abulegba Lagos Nigeria
+</p>
+
+<p>
+Office:
++2348139102599
+</p>
+
+<p>
+Private:
++2348150990331
+</p>
+
+<p>
+<a href="contact.html">
+Visit Contact Page →
+</a>
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 God of Now Now International Ministry.
+All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/2348139102599"
+target="_blank"
+aria-label="Contact us on WhatsApp">
+
+☎
+
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function toggleMenu(){
+
+document
+.querySelector(".nav-links")
+.classList
+.toggle("show");
+
+}
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+document
+.querySelector(".nav-links")
+.classList
+.remove("show");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
