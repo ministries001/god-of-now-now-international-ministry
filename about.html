@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us | God of Now Now International Ministry</title>
+
+  <meta name="description" content="Learn more about God of Now Now International Ministry, our vision, mission, values and commitment to the Gospel of Jesus Christ.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    /* TOP BAR */
+
+    .topbar {
+      background: #111;
+      color: #fff;
+      padding: 9px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .topbar span {
+      margin-right: 18px;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(255,255,255,.97);
+      box-shadow: 0 2px 15px rgba(0,0,0,.08);
+    }
+
+    nav {
+      max-width: 1250px;
+      margin: auto;
+      min-height: 78px;
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #b58b28;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .logo-text {
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+      line-height: 1.1;
+      font-weight: 800;
+      color: #111;
+    }
+
+    .logo-text small {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: #b58b28;
+      margin-top: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 600;
+      color: #222;
+      transition: .3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #b58b28;
+    }
+
+    .give-btn {
+      background: #b58b28 !important;
+      color: white !important;
+      padding: 11px 20px;
+      border-radius: 5px;
+    }
+
+    .menu-btn {
+      display: none;
+      border: none;
+      background: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* PAGE HERO */
+
+    .page-hero {
+      min-height: 430px;
+      background:
+        linear-gradient(rgba(0,0,0,.67), rgba(0,0,0,.67)),
+        url("https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 60px 6%;
+    }
+
+    .page-hero-content {
+      max-width: 850px;
+    }
+
+    .page-label {
+      color: #e5c15b;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .page-hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(45px, 7vw, 70px);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .page-hero p {
+      color: #ddd;
+      font-size: 16px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* COMMON */
+
+    .section-label {
+      color: #b58b28;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: #171717;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 27px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 13px;
+      transition: .3s;
+    }
+
+    .btn-gold {
+      background: #b58b28;
+      color: #fff;
+    }
+
+    .btn-gold:hover {
+      background: #8f6b19;
+      transform: translateY(-2px);
+    }
+
+    /* OUR STORY */
+
+    .story {
+      padding: 90px 7%;
+    }
+
+    .story-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .story-image {
+      position: relative;
+    }
+
+    .story-image img {
+      height: 500px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .story-badge {
+      position: absolute;
+      right: -20px;
+      bottom: 25px;
+      background: #b58b28;
+      color: white;
+      padding: 18px 25px;
+      border-radius: 5px;
+      font-weight: 700;
+    }
+
+    .story-text p {
+      color: #666;
+      margin-bottom: 17px;
+    }
+
+    /* VISION MISSION */
+
+    .vision {
+      background: #f5f1e8;
+      padding: 90px 7%;
+    }
+
+    .center-heading {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 45px;
+    }
+
+    .vm-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 30px;
+    }
+
+    .vm-card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 6px;
+      box-shadow: 0 7px 25px rgba(0,0,0,.06);
+    }
+
+    .vm-icon {
+      width: 58px;
+      height: 58px;
+      background: #b58b28;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .vm-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 27px;
+      margin-bottom: 12px;
+    }
+
+    .vm-card p {
+      color: #666;
+    }
+
+    /* VALUES */
+
+    .values {
+      padding: 90px 7%;
+      background: #fff;
+    }
+
+    .values-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 25px;
+    }
+
+    .value-card {
+      padding: 30px;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      text-align: center;
+      transition: .3s;
+    }
+
+    .value-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,.08);
+    }
+
+    .value-icon {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .value-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .value-card p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* SCRIPTURE */
+
+    .scripture {
+      padding: 90px 7%;
+      background:
+        linear-gradient(rgba(181,139,40,.91), rgba(181,139,40,.91)),
+        url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+      text-align: center;
+      color: white;
+    }
+
+    .scripture blockquote {
+      max-width: 900px;
+      margin: auto;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(27px,4vw,42px);
+      line-height: 1.4;
+    }
+
+    .scripture cite {
+      display: block;
+      margin-top: 20px;
+      font-size: 13px;
+      letter-spacing: 2px;
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    /* WHAT WE BELIEVE */
+
+    .beliefs {
+      padding: 90px 7%;
+      background: #111;
+      color: white;
+    }
+
+    .beliefs-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .beliefs .section-title {
+      color: white;
+    }
+
+    .beliefs p {
+      color: #ccc;
+      margin-bottom: 18px;
+    }
+
+    .belief-list {
+      list-style: none;
+    }
+
+    .belief-list li {
+      padding: 15px 0;
+      border-bottom: 1px solid #333;
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    .belief-list li::before {
+      content: "✓";
+      color: #e5c15b;
+      font-weight: 800;
+      margin-right: 12px;
+    }
+
+    /* COMMUNITY */
+
+    .community {
+      padding: 90px 7%;
+    }
+
+    .community-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .community-image img {
+      height: 400px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .community-text p {
+      color: #666;
+      margin-bottom: 18px;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 80px 7%;
+      background: #f5f1e8;
+      text-align: center;
+    }
+
+    .cta-content {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .cta p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #080808;
+      color: white;
+      padding: 60px 7% 25px;
+    }
+
+    .footer-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 45px;
+    }
+
+    footer h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer li {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      color: #e5c15b;
+    }
+
+    .copyright {
+      border-top: 1px solid #222;
+      margin-top: 40px;
+      padding-top: 20px;
+      text-align: center;
+      color: #777;
+      font-size: 12px;
+    }
+
+    /* WHATSAPP */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px;
+      z-index: 1000;
+      box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:900px) {
+
+      .nav-links {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 7%;
+        gap: 18px;
+        display: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,.1);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .story-grid,
+      .beliefs-grid,
+      .community-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .story-image img {
+        height: 420px;
+      }
+    }
+
+    @media(max-width:600px) {
+
+      .topbar {
+        display: none;
+      }
+
+      nav {
+        min-height: 70px;
+      }
+
+      .logo-text {
+        font-size: 15px;
+      }
+
+      .logo-icon {
+        width: 42px;
+        height: 42px;
+      }
+
+      .page-hero {
+        min-height: 390px;
+      }
+
+      .page-hero h1 {
+        font-size: 44px;
+      }
+
+      .section-title {
+        font-size: 34px;
+      }
+
+      .story,
+      .vision,
+      .values,
+      .beliefs,
+      .community,
+      .cta {
+        padding: 65px 6%;
+      }
+
+      .vm-grid,
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .story-image img,
+      .community-image img {
+        height: 330px;
+      }
+
+      .story-badge {
+        right: 10px;
+      }
+
+      .vm-card {
+        padding: 30px 24px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <!-- TOP BAR -->
+
+  <div class="topbar">
+
+    <div>
+      <span>📍 Your Church Location</span>
+      <span>📞 +234 XXX XXX XXXX</span>
+    </div>
+
+    <div>
+      <span>Sunday Worship: 8:00 AM</span>
+    </div>
+
+  </div>
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <nav>
+
+      <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+          ✝
+        </div>
+
+        <div class="logo-text">
+
+          GOD OF NOW NOW
+
+          <small>
+            INTERNATIONAL MINISTRY
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+      </button>
+
+
+      <ul class="nav-links" id="navLinks">
+
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html" class="active">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="ministries.html">
+            Ministries
+          </a>
+        </li>
+
+        <li>
+          <a href="sermons.html">
+            Sermons
+          </a>
+        </li>
+
+        <li>
+          <a href="prayer.html">
+            Prayer
+          </a>
+        </li>
+
+        <li>
+          <a href="contact.html">
+            Contact
+          </a>
+        </li>
+
+        <li>
+          <a href="give.html" class="give-btn">
+            Give
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!-- PAGE HERO -->
+
+  <section class="page-hero">
+
+    <div class="page-hero-content">
+
+      <div class="page-label">
+        Discover Our Story
+      </div>
+
+      <h1>
+        About Our Ministry
+      </h1>
+
+      <p>
+        Welcome to God of Now Now International Ministry,
+        a family of believers committed to knowing Christ,
+        growing in faith and making a difference in our world.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- OUR STORY -->
+
+  <section class="story">
+
+    <div class="story-grid">
+
+
+      <div class="story-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1000&q=85"
+          alt="God of Now Now International Ministry">
+
+        <div class="story-badge">
+          A Place of Encounter
+        </div>
+
+      </div>
+
+
+      <div class="story-text">
+
+        <div class="section-label">
+          Who We Are
+        </div>
+
+        <h2 class="section-title">
+          We Believe God Is Still Doing Great Things Today
+        </h2>
+
+        <p>
+          God of Now Now International Ministry is a Christian
+          ministry established with a passion to see people
+          encounter God, experience His love and walk in the
+          purpose He has given them.
+        </p>
+
+        <p>
+          We are a growing family of believers who believe in
+          the power of prayer, the authority of God's Word and
+          the transforming power of the Holy Spirit.
+        </p>
+
+        <p>
+          Our church is a place where people from different
+          backgrounds can come together to worship God, learn
+          His Word, build meaningful relationships and serve
+          their communities.
+        </p>
+
+        <a href="contact.html" class="btn btn-gold">
+          CONNECT WITH US
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- VISION & MISSION -->
+
+  <section class="vision">
+
+    <div class="center-heading">
+
+      <div class="section-label">
+        Our Purpose
+      </div>
+
+      <h2 class="section-title">
+        Vision & Mission
+      </h2>
+
+      <p>
+        Everything we do is centered on Christ and His
+        purpose for humanity.
+      </p>
+
+    </div>
+
+
+    <div class="vm-grid">
+
+
+      <div class="vm-card">
+
+        <div class="vm-icon">
+          👁
+        </div>
+
+        <h3>
+          Our Vision
+        </h3>
+
+        <p>
+          To raise a generation of Christ-centered believers
+          who know God, understand their identity in Christ,
+          discover their purpose and positively impact their
+          families, communities and the world.
+        </p>
+
+      </div>
+
+
+      <div class="vm-card">
+
+        <div class="vm-icon">
+          🎯
+        </div>
+
+        <h3>
+          Our Mission
+        </h3>
+
+        <p>
+          To preach the Gospel of Jesus Christ, disciple
+          believers, build strong families, empower people
+          through God's Word and demonstrate the love of
+          Christ through practical service and outreach.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- CORE VALUES -->
+
+  <section class="values">
+
+    <div class="center-heading">
+
+      <div class="section-label">
+        What Guides Us
+      </div>
+
+      <h2 class="section-title">
+        Our Core Values
+      </h2>
+
+      <p>
+        These values shape who we are and how we serve God
+        and people.
+      </p>
+
+    </div>
+
+
+    <div class="values-grid">
+
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          ✝️
+        </div>
+
+        <h3>
+          Christ First
+        </h3>
+
+        <p>
+          Jesus Christ is at the center of everything we
+          believe, teach and do.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          📖
+        </div>
+
+        <h3>
+          God's Word
+        </h3>
+
+        <p>
+          We believe the Bible is God's Word and the foundation
+          for Christian living.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          🙏
+        </div>
+
+        <h3>
+          Prayer
+        </h3>
+
+        <p>
+          We depend on prayer and seek God's presence in
+          every area of our lives.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          ❤️
+        </div>
+
+        <h3>
+          Love
+        </h3>
+
+        <p>
+          We seek to love God and love people with sincerity,
+          compassion and grace.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          🤝
+        </div>
+
+        <h3>
+          Unity
+        </h3>
+
+        <p>
+          We believe that God's people are stronger when
+          they walk together in unity.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          🌍
+        </div>
+
+        <h3>
+          Service
+        </h3>
+
+        <p>
+          We are called to serve God, His people and our
+          communities with humility.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- SCRIPTURE -->
+
+  <section class="scripture">
+
+    <blockquote>
+      “But seek ye first the kingdom of God, and his
+      righteousness; and all these things shall be added
+      unto you.”
+    </blockquote>
+
+    <cite>
+      MATTHEW 6:33
+    </cite>
+
+  </section>
+
+
+  <!-- WHAT WE BELIEVE -->
+
+  <section class="beliefs">
+
+    <div class="beliefs-grid">
+
+
+      <div>
+
+        <div class="section-label">
+          Our Faith
+        </div>
+
+        <h2 class="section-title">
+          What We Believe
+        </h2>
+
+        <p>
+          Our faith is founded on the Gospel of Jesus Christ
+          and the truth of God's Word.
+        </p>
+
+        <p>
+          We desire to help every believer develop a genuine
+          relationship with God and live out their faith
+          every day.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <ul class="belief-list">
+
+          <li>
+            We believe in one true and living God.
+          </li>
+
+          <li>
+            We believe in Jesus Christ, the Son of God and
+            Savior of the world.
+          </li>
+
+          <li>
+            We believe in the death and resurrection of Jesus
+            Christ.
+          </li>
+
+          <li>
+            We believe in the Holy Spirit and His work in the
+            life of every believer.
+          </li>
+
+          <li>
+            We believe the Bible is the inspired Word of God.
+          </li>
+
+          <li>
+            We believe in salvation through faith in Jesus
+            Christ.
+          </li>
+
+          <li>
+            We believe believers are called to live holy and
+            purposeful lives.
+          </li>
+
+          <li>
+            We believe in the power of prayer and faith.
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- COMMUNITY -->
+
+  <section class="community">
+
+    <div class="community-grid">
+
+
+      <div class="community-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1000&q=85"
+          alt="Community Outreach">
+
+      </div>
+
+
+      <div class="community-text">
+
+        <div class="section-label">
+          Making a Difference
+        </div>
+
+        <h2 class="section-title">
+          Faith That Serves People
+        </h2>
+
+        <p>
+          Our faith is not only something we express inside
+          the church. We believe that the love of Christ should
+          be demonstrated through practical acts of service.
+        </p>
+
+        <p>
+          Through evangelism, prayer, community outreach,
+          youth development and other initiatives, we seek
+          opportunities to make a positive difference in the
+          lives of people around us.
+        </p>
+
+        <p>
+          We believe that when God's people serve with love,
+          communities can be transformed.
+        </p>
+
+        <a href="ministries.html" class="btn btn-gold">
+          EXPLORE OUR MINISTRIES
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="cta-content">
+
+      <div class="section-label">
+        You Have a Place Here
+      </div>
+
+      <h2 class="section-title">
+        Come and Experience God's Presence
+      </h2>
+
+      <p>
+        Whether you are searching for a church family,
+        looking to grow spiritually or simply want to know
+        more about Jesus, we would love to welcome you.
+      </p>
+
+      <a href="contact.html" class="btn btn-gold">
+        PLAN YOUR VISIT
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-grid">
+
+
+      <div>
+
+        <h3>
+          God of Now Now International Ministry
+        </h3>
+
+        <p>
+          A place of faith, prayer, worship, restoration
+          and transformation.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html">
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a href="ministries.html">
+              Ministries
+            </a>
+          </li>
+
+          <li>
+            <a href="sermons.html">
+              Sermons
+            </a>
+          </li>
+
+          <li>
+            <a href="prayer.html">
+              Prayer Request
+            </a>
+          </li>
+
+          <li>
+            <a href="give.html">
+              Giving
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Service Times
+        </h3>
+
+        <p>
+          Sunday Worship<br>
+          8:00 AM – 11:00 AM
+        </p>
+
+        <br>
+
+        <p>
+          Tuesday Prayer<br>
+          5:00 PM – 7:00 PM
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 God of Now Now International Ministry.
+      All Rights Reserved.
+
+    </div>
+
+  </footer>
+
+
+  <!-- WHATSAPP -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/2340000000000"
+    target="_blank"
+    aria-label="Chat on WhatsApp"
+  >
+    ☎
+  </a>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("navLinks")
+        .classList.toggle("active");
+
+    }
+
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+      link.addEventListener("click", function() {
+
+        document
+          .getElementById("navLinks")
+          .classList.remove("active");
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
