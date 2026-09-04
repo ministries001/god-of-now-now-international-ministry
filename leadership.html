@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leadership | God of Now Now International Ministry</title>
+  <meta name="description" content="Meet the leadership of God of Now Now International Ministry. Experience the God of Now.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #b58b28;
+      --light-gold: #e5c15b;
+      --black: #111111;
+      --dark: #080808;
+      --cream: #f5f1e8;
+      --white: #ffffff;
+      --gray: #666666;
+      --light-gray: #eeeeee;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: var(--white);
+      color: var(--black);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(8, 8, 8, 0.97);
+      border-bottom: 1px solid rgba(229, 193, 91, 0.25);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 16px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      color: var(--white);
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .logo span {
+      color: var(--light-gold);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--light-gold);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 430px;
+      background:
+        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.72)),
+        url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      color: white;
+    }
+
+    .hero-content .small-title {
+      color: var(--light-gold);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #eeeeee;
+      font-size: 16px;
+    }
+
+    /* SECTION */
+    section {
+      padding: 85px 20px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(34px, 5vw, 48px);
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      max-width: 700px;
+      margin: auto;
+      color: var(--gray);
+    }
+
+    /* INTRO */
+    .intro {
+      background: var(--cream);
+    }
+
+    .intro-box {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .intro-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .intro-box p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    /* LEADERSHIP GRID */
+    .leaders {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .leader-card {
+      background: var(--white);
+      border: 1px solid #e5e5e5;
+      box-shadow: 0 12px 35px rgba(0,0,0,.08);
+      overflow: hidden;
+      transition: .35s ease;
+      text-align: center;
+    }
+
+    .leader-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 45px rgba(0,0,0,.14);
+    }
+
+    .leader-image {
+      height: 360px;
+      background: var(--cream);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .leader-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .5s ease;
+    }
+
+    .leader-card:hover .leader-image img {
+      transform: scale(1.04);
+    }
+
+    .leader-info {
+      padding: 27px 20px 30px;
+    }
+
+    .leader-info h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .leader-role {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .leader-info p {
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    /* FEATURE LEADER */
+    .featured {
+      background: var(--black);
+      color: white;
+    }
+
+    .featured-wrapper {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .featured-image {
+      min-height: 520px;
+      overflow: hidden;
+    }
+
+    .featured-image img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+    }
+
+    .featured-content .eyebrow {
+      color: var(--light-gold);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .featured-content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(35px, 5vw, 52px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .featured-content p {
+      color: #d7d7d7;
+      margin-bottom: 17px;
+    }
+
+    .gold-line {
+      width: 70px;
+      height: 3px;
+      background: var(--light-gold);
+      margin: 25px 0;
+    }
+
+    /* VALUES */
+    .values {
+      background: var(--cream);
+    }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .value-card {
+      background: white;
+      padding: 35px 25px;
+      text-align: center;
+      border-top: 4px solid var(--gold);
+    }
+
+    .value-icon {
+      width: 65px;
+      height: 65px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: var(--black);
+      color: var(--light-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+    }
+
+    .value-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .value-card p {
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    /* SCRIPTURE */
+    .scripture {
+      background:
+        linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
+        url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1800&q=85")
+        center/cover fixed;
+      color: white;
+      text-align: center;
+    }
+
+    .scripture blockquote {
+      max-width: 850px;
+      margin: auto;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(25px, 4vw, 40px);
+      line-height: 1.4;
+    }
+
+    .scripture cite {
+      display: block;
+      margin-top: 25px;
+      color: var(--light-gold);
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    /* CTA */
+    .cta {
+      background: var(--gold);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .cta h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(32px, 5vw, 48px);
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--black);
+      color: white;
+      padding: 14px 28px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .5px;
+      transition: .3s ease;
+    }
+
+    .btn:hover {
+      background: white;
+      color: var(--black);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 65px 20px 25px;
+    }
+
+    .footer-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer-col h3 {
+      font-family: "Playfair Display", serif;
+      color: var(--light-gold);
+      font-size: 22px;
+      margin-bottom: 18px;
+    }
+
+    .footer-col p {
+      color: #bbb;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      display: block;
+      color: #bbb;
+      font-size: 14px;
+      margin-bottom: 9px;
+      transition: .3s;
+    }
+
+    .footer-col a:hover {
+      color: var(--light-gold);
+    }
+
+    .footer-bottom {
+      max-width: 1150px;
+      margin: 45px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      text-align: center;
+      color: #888;
+      font-size: 12px;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      z-index: 999;
+      box-shadow: 0 8px 25px rgba(0,0,0,.25);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+
+      .leaders {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .value-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-image,
+      .featured-image img {
+        min-height: 400px;
+        height: 400px;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--dark);
+        display: none;
+        flex-direction: column;
+        padding: 25px;
+        border-top: 1px solid rgba(229,193,91,.2);
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      nav a {
+        padding: 8px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .nav-container {
+        padding: 15px 18px;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      section {
+        padding: 65px 18px;
+      }
+
+      .hero {
+        min-height: 380px;
+      }
+
+      .leaders {
+        grid-template-columns: 1fr;
+      }
+
+      .leader-image {
+        height: 400px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-image,
+      .featured-image img {
+        height: 350px;
+        min-height: 350px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+
+      <a href="index.html" class="logo">
+        GOD OF <span>NOW</span>
+      </a>
+
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="leadership.html" class="active">Leadership</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="news.html">News</a>
+        <a href="prayer.html">Prayer</a>
+        <a href="give.html">Give</a>
+        <a href="contact.html">Contact</a>
+        <a href="activities.html">Activities</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="small-title">
+        God of Now Now International Ministry
+      </div>
+
+      <h1>Our Leadership</h1>
+
+      <p>
+        Servant leaders committed to advancing the Gospel,
+        building lives and helping people experience the God of Now.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+  <section class="intro">
+
+    <div class="container">
+
+      <div class="intro-box">
+
+        <h2>Leadership With Purpose</h2>
+
+        <p>
+          At God of Now Now International Ministry, we believe that
+          leadership is a divine responsibility and a call to serve.
+        </p>
+
+        <p>
+          Our leadership is committed to spiritual growth, sound biblical
+          teaching, prayer, evangelism, discipleship and the transformation
+          of lives through the power of God.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LEADERS -->
+  <section>
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="eyebrow">
+          Our Leaders
+        </div>
+
+        <h2>Servants of the Kingdom</h2>
+
+        <p>
+          Meet the people serving God's purpose through leadership,
+          ministry and service.
+        </p>
+
+      </div>
+
+
+      <div class="leaders">
+
+        <!-- LEADER 1 -->
+        <div class="leader-card">
+
+          <div class="leader-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=85"
+              alt="Senior Ministry Leader">
+
+          </div>
+
+          <div class="leader-info">
+
+            <h3>Senior Ministry Leader</h3>
+
+            <div class="leader-role">
+              General Overseer / Senior Prophet
+            </div>
+
+            <p>
+              Providing spiritual direction, biblical leadership and
+              vision for the ministry.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- LEADER 2 -->
+        <div class="leader-card">
+
+          <div class="leader-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=85"
+              alt="Ministry Leader">
+
+          </div>
+
+          <div class="leader-info">
+
+            <h3>Ministry Leader</h3>
+
+            <div class="leader-role">
+              Assistant Ministry Leader
+            </div>
+
+            <p>
+              Supporting the leadership and helping coordinate the
+              spiritual life and activities of the church.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- LEADER 3 -->
+        <div class="leader-card">
+
+          <div class="leader-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=85"
+              alt="Church Administrator">
+
+          </div>
+
+          <div class="leader-info">
+
+            <h3>Church Administrator</h3>
+
+            <div class="leader-role">
+              Administration
+            </div>
+
+            <p>
+              Helping to coordinate church administration,
+              programmes and organizational activities.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- LEADER 4 -->
+        <div class="leader-card">
+
+          <div class="leader-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85"
+              alt="Ministry Coordinator">
+
+          </div>
+
+          <div class="leader-info">
+
+            <h3>Ministry Coordinator</h3>
+
+            <div class="leader-role">
+              Ministry Operations
+            </div>
+
+            <p>
+              Coordinating ministry activities and supporting
+              effective service across church departments.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- LEADER 5 -->
+        <div class="leader-card">
+
+          <div class="leader-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=85"
+              alt="Women's Ministry Leader">
+
+          </div>
+
+          <div class="leader-info">
+
+            <h3>Women's Ministry Leader</h3>
+
+            <div class="leader-role">
+              Women's Ministry
+            </div>
+
+            <p>
+              Encouraging women to grow spiritually and fulfill
+              their God-given purpose.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- LEADER 6 -->
+        <div class="leader-card">
+
+          <div class="leader-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=85"
+              alt="Youth Ministry Leader">
+
+          </div>
+
+          <div class="leader-info">
+
+            <h3>Youth Ministry Leader</h3>
+
+            <div class="leader-role">
+              Youth & Young Adults
+            </div>
+
+            <p>
+              Equipping young people with faith, purpose and
+              biblical values for effective Christian living.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURED LEADERSHIP -->
+  <section class="featured">
+
+    <div class="container">
+
+      <div class="featured-wrapper">
+
+        <div class="featured-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1000&q=85"
+            alt="God of Now Ministry">
+
+        </div>
+
+
+        <div class="featured-content">
+
+          <div class="eyebrow">
+            A Calling To Serve
+          </div>
+
+          <h2>
+            Leadership Is Service
+          </h2>
+
+          <div class="gold-line"></div>
+
+          <p>
+            We believe that true spiritual leadership is not about
+            position but about service, sacrifice and responsibility.
+          </p>
+
+          <p>
+            Our leaders seek to lead by example, encourage believers,
+            strengthen families, develop ministries and reach people
+            with the message of Jesus Christ.
+          </p>
+
+          <p>
+            Every leader is encouraged to remain committed to prayer,
+            God's Word, integrity, humility and the advancement of
+            God's Kingdom.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LEADERSHIP VALUES -->
+  <section class="values">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="eyebrow">
+          Our Foundation
+        </div>
+
+        <h2>Leadership Values</h2>
+
+        <p>
+          Principles that guide our leadership and ministry service.
+        </p>
+
+      </div>
+
+
+      <div class="value-grid">
+
+        <div class="value-card">
+
+          <div class="value-icon">✦</div>
+
+          <h3>Integrity</h3>
+
+          <p>
+            We value honesty, transparency and godly character
+            in every area of leadership.
+          </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+          <div class="value-icon">♡</div>
+
+          <h3>Servanthood</h3>
+
+          <p>
+            We lead by serving others with humility,
+            compassion and love.
+          </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+          <div class="value-icon">✝</div>
+
+          <h3>Faith</h3>
+
+          <p>
+            We remain committed to God's Word and trust Him
+            for direction, wisdom and strength.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SCRIPTURE -->
+  <section class="scripture">
+
+    <blockquote>
+      “Remember them which have the rule over you, who have spoken
+      unto you the word of God: whose faith follow.”
+    </blockquote>
+
+    <cite>
+      HEBREWS 13:7
+    </cite>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>Be Part of What God Is Doing</h2>
+
+      <p>
+        Join us in worship, prayer, service and fellowship as we
+        continue to experience the God of Now.
+      </p>
+
+      <a href="contact.html" class="btn">
+        CONTACT THE MINISTRY
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-grid">
+
+      <div class="footer-col">
+
+        <h3>God of Now</h3>
+
+        <p>
+          God of Now Now International Ministry
+        </p>
+
+        <p>
+          Experience the God of Now.
+        </p>
+
+        <p>
+          A place of worship, prayer, transformation and
+          encounter with God.
+        </p>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Quick Links</h3>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="gallery.html">Gallery</a>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Ministry</h3>
+
+        <a href="news.html">News</a>
+        <a href="prayer.html">Prayer Request</a>
+        <a href="give.html">Give</a>
+        <a href="activities.html">Activities</a>
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Contact</h3>
+
+        <p>
+          7 Ishaga Street Agbelekale Ekoro-Command Road
+          Abulegba Lagos Nigeria
+        </p>
+
+        <p>
+          Office:
+          <a href="tel:+2348139102599">
+            +2348139102599
+          </a>
+        </p>
+
+        <p>
+          Private:
+          <a href="tel:+2348150990331">
+            +2348150990331
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      © 2026 God of Now Now International Ministry.
+      All Rights Reserved.
+
+    </div>
+
+  </footer>
+
+
+  <!-- WHATSAPP -->
+  <a
+    href="https://wa.me/2348139102599"
+    class="whatsapp"
+    aria-label="Chat on WhatsApp"
+    target="_blank">
+    ☎
+  </a>
+
+
+  <script>
+
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("show");
+    }
+
+    document.querySelectorAll("#mainNav a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        document.getElementById("mainNav").classList.remove("show");
+      });
+    });
+
+  </script>
+
+</body>
+</html>
