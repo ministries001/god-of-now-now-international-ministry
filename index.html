@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>God of Now Now International Ministry</title>
+
+  <meta name="description" content="God of Now Now International Ministry - A place of faith, prayer, worship, restoration and transformation.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    /* TOP BAR */
+    .topbar {
+      background: #111;
+      color: #fff;
+      padding: 9px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .topbar span {
+      margin-right: 18px;
+    }
+
+    /* NAVIGATION */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(255,255,255,0.97);
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    }
+
+    nav {
+      max-width: 1250px;
+      margin: auto;
+      min-height: 78px;
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #b58b28;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .logo-text {
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+      line-height: 1.1;
+      color: #111;
+      font-weight: 800;
+    }
+
+    .logo-text small {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: #b58b28;
+      margin-top: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 600;
+      color: #222;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #b58b28;
+    }
+
+    .give-btn {
+      background: #b58b28 !important;
+      color: white !important;
+      padding: 11px 20px;
+      border-radius: 5px;
+    }
+
+    .menu-btn {
+      display: none;
+      border: none;
+      background: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 680px;
+      position: relative;
+      background:
+        linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.68)),
+        url("https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 70px 6%;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      color: #e5c15b;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 1.08;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: #e5c15b;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      font-size: 17px;
+      color: #eee;
+    }
+
+    .hero-buttons {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 27px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 13px;
+      transition: .3s;
+    }
+
+    .btn-gold {
+      background: #b58b28;
+      color: #fff;
+    }
+
+    .btn-gold:hover {
+      background: #8f6b19;
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      border: 1px solid white;
+      color: white;
+    }
+
+    .btn-light:hover {
+      background: white;
+      color: #111;
+    }
+
+    /* WELCOME */
+    .welcome {
+      padding: 85px 7%;
+      background: #fff;
+    }
+
+    .welcome-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .welcome-image {
+      position: relative;
+    }
+
+    .welcome-image img {
+      height: 480px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .image-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: #b58b28;
+      color: white;
+      padding: 20px 28px;
+      border-radius: 5px;
+      font-weight: 700;
+    }
+
+    .section-label {
+      color: #b58b28;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: #171717;
+    }
+
+    .welcome-text p {
+      color: #666;
+      margin-bottom: 17px;
+    }
+
+    /* SERVICE STRIP */
+    .service-strip {
+      background: #f5f1e8;
+      padding: 55px 6%;
+    }
+
+    .service-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 30px;
+      text-align: center;
+      border-radius: 6px;
+      box-shadow: 0 7px 25px rgba(0,0,0,.06);
+    }
+
+    .service-icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #b58b28;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 15px;
+      font-size: 23px;
+    }
+
+    .service-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* ABOUT */
+    .about {
+      padding: 90px 7%;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    .about-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .about .section-title {
+      color: white;
+    }
+
+    .about p {
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+
+    /* PROGRAMMES */
+    .programmes {
+      padding: 90px 7%;
+      background: #fff;
+    }
+
+    .heading-center {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 45px;
+    }
+
+    .programme-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .programme {
+      border: 1px solid #eee;
+      border-radius: 6px;
+      overflow: hidden;
+      background: white;
+      transition: .3s;
+    }
+
+    .programme:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 35px rgba(0,0,0,.1);
+    }
+
+    .programme-img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .programme-content {
+      padding: 25px;
+    }
+
+    .programme-content h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    .programme-content p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* BIBLE VERSE */
+    .verse {
+      background:
+        linear-gradient(rgba(181,139,40,.9), rgba(181,139,40,.9)),
+        url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+      padding: 85px 7%;
+      text-align: center;
+      color: white;
+    }
+
+    .verse blockquote {
+      max-width: 900px;
+      margin: auto;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(26px, 4vw, 42px);
+      line-height: 1.4;
+    }
+
+    .verse cite {
+      display: block;
+      margin-top: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      letter-spacing: 2px;
+    }
+
+    /* SERMON */
+    .sermons {
+      padding: 90px 7%;
+      background: #f8f8f8;
+    }
+
+    .sermon-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .sermon {
+      background: white;
+      padding: 28px;
+      border-radius: 6px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    }
+
+    .sermon-date {
+      color: #b58b28;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .sermon h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      margin: 10px 0;
+    }
+
+    .sermon p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .watch {
+      display: inline-block;
+      margin-top: 15px;
+      color: #b58b28;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* PRAYER */
+    .prayer {
+      padding: 90px 7%;
+      background: white;
+    }
+
+    .prayer-box {
+      max-width: 1000px;
+      margin: auto;
+      background: #f5f1e8;
+      border-radius: 8px;
+      padding: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .prayer-box p {
+      color: #666;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      border: 1px solid #ddd;
+      padding: 14px;
+      margin-bottom: 13px;
+      border-radius: 4px;
+      font-family: inherit;
+      outline: none;
+    }
+
+    form textarea {
+      height: 130px;
+      resize: vertical;
+    }
+
+    form input:focus,
+    form textarea:focus {
+      border-color: #b58b28;
+    }
+
+    form button {
+      border: none;
+      cursor: pointer;
+    }
+
+    /* GIVE */
+    .give {
+      padding: 90px 7%;
+      text-align: center;
+      background: #111;
+      color: white;
+    }
+
+    .give .section-title {
+      color: white;
+    }
+
+    .give p {
+      color: #ccc;
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    /* CONTACT */
+    .contact {
+      padding: 85px 7%;
+    }
+
+    .contact-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .contact-card {
+      padding: 30px;
+      border: 1px solid #eee;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    .contact-card .icon {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .contact-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 21px;
+    }
+
+    .contact-card p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #080808;
+      color: white;
+      padding: 60px 7% 25px;
+    }
+
+    .footer-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 45px;
+    }
+
+    footer h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer li {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      color: #e5c15b;
+    }
+
+    .copyright {
+      border-top: 1px solid #222;
+      margin-top: 40px;
+      padding-top: 20px;
+      text-align: center;
+      color: #777;
+      font-size: 12px;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 27px;
+      z-index: 1000;
+      box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 900px) {
+
+      .nav-links {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 7%;
+        gap: 18px;
+        display: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,.1);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .welcome-grid,
+      .prayer-box {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid,
+      .programme-grid,
+      .sermon-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media(max-width: 600px) {
+
+      .topbar {
+        display: none;
+      }
+
+      nav {
+        min-height: 70px;
+      }
+
+      .logo-text {
+        font-size: 15px;
+      }
+
+      .logo-icon {
+        width: 42px;
+        height: 42px;
+      }
+
+      .hero {
+        min-height: 600px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .section-title {
+        font-size: 34px;
+      }
+
+      .welcome,
+      .programmes,
+      .sermons,
+      .prayer,
+      .contact {
+        padding: 65px 6%;
+      }
+
+      .welcome-image img {
+        height: 350px;
+      }
+
+      .image-badge {
+        right: 10px;
+      }
+
+      .service-grid,
+      .programme-grid,
+      .sermon-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .prayer-box {
+        padding: 30px 22px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div>
+      <span>📍 Your Church Location</span>
+      <span>📞 +234 XXX XXX XXXX</span>
+    </div>
+
+    <div>
+      <span>Sunday Worship: 8:00 AM</span>
+    </div>
+  </div>
+
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+
+      <a href="#home" class="logo">
+        <div class="logo-icon">✝</div>
+
+        <div class="logo-text">
+          GOD OF NOW NOW
+          <small>INTERNATIONAL MINISTRY</small>
+        </div>
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programmes">Ministries</a></li>
+        <li><a href="#sermons">Sermons</a></li>
+        <li><a href="#prayer">Prayer</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#give" class="give-btn">Give</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <div class="hero-tag">
+        Welcome to our Ministry
+      </div>
+
+      <h1>
+        Experience the <span>God of Now</span>
+      </h1>
+
+      <p>
+        Welcome to God of Now Now International Ministry,
+        a place where faith comes alive, lives are transformed,
+        destinies are restored and people encounter the living God.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#about" class="btn btn-gold">
+          LEARN MORE
+        </a>
+
+        <a href="#sermons" class="btn btn-light">
+          WATCH SERMONS
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WELCOME -->
+  <section class="welcome">
+
+    <div class="welcome-grid">
+
+      <div class="welcome-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1000&q=85"
+          alt="Church Worship">
+
+        <div class="image-badge">
+          A Place of Encounter
+        </div>
+
+      </div>
+
+      <div class="welcome-text">
+
+        <div class="section-label">
+          Welcome to Church
+        </div>
+
+        <h2 class="section-title">
+          You Are Welcome in God's Presence
+        </h2>
+
+        <p>
+          At God of Now Now International Ministry, we believe
+          that everyone has a God-given purpose and destiny.
+          Our desire is to help people discover Christ,
+          grow in faith and become everything God has called
+          them to be.
+        </p>
+
+        <p>
+          Whether you are visiting for the first time or you
+          have been part of our family for years, there is a
+          place for you here.
+        </p>
+
+        <a href="#contact" class="btn btn-gold">
+          JOIN US
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICE TIMES -->
+  <section class="service-strip">
+
+    <div class="heading-center">
+      <div class="section-label">Come Worship With Us</div>
+      <h2 class="section-title">Our Weekly Services</h2>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="service-icon">⛪</div>
+        <h3>Sunday Worship</h3>
+        <p>
+          Every Sunday<br>
+          8:00 AM – 11:00 AM
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🙏</div>
+        <h3>Tuesday Prayer</h3>
+        <p>
+          Every Tuesday<br>
+          5:00 PM – 7:00 PM
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📖</div>
+        <h3>Bible Study</h3>
+        <p>
+          Every Thursday<br>
+          5:00 PM – 7:00 PM
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <div class="about-content">
+
+      <div class="section-label">
+        About Our Ministry
+      </div>
+
+      <h2 class="section-title">
+        A Family Built on Faith, Love & Purpose
+      </h2>
+
+      <p>
+        God of Now Now International Ministry is committed
+        to spreading the Gospel of Jesus Christ and raising
+        believers who are spiritually strong, purpose-driven
+        and passionate about God's kingdom.
+      </p>
+
+      <p>
+        Through worship, prayer, teaching, evangelism,
+        discipleship and community outreach, we seek to
+        demonstrate the love of Christ and impact lives.
+      </p>
+
+      <a href="#contact" class="btn btn-gold">
+        CONNECT WITH US
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- MINISTRIES -->
+  <section class="programmes" id="programmes">
+
+    <div class="heading-center">
+
+      <div class="section-label">
+        Our Ministries
+      </div>
+
+      <h2 class="section-title">
+        Growing Together in Christ
+      </h2>
+
+      <p>
+        There is a place for everyone to serve, grow,
+        learn and connect.
+      </p>
+
+    </div>
+
+
+    <div class="programme-grid">
+
+      <div class="programme">
+
+        <img
+          class="programme-img"
+          src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=900&q=80"
+          alt="Prayer Ministry">
+
+        <div class="programme-content">
+
+          <h3>Prayer Ministry</h3>
+
+          <p>
+            Building a strong prayer community through
+            intercession, spiritual warfare and fellowship
+            with God.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="programme">
+
+        <img
+          class="programme-img"
+          src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=900&q=80"
+          alt="Bible Study">
+
+        <div class="programme-content">
+
+          <h3>Word & Discipleship</h3>
+
+          <p>
+            Growing believers through sound biblical teaching,
+            discipleship and practical Christian living.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="programme">
+
+        <img
+          class="programme-img"
+          src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=900&q=80"
+          alt="Community Outreach">
+
+        <div class="programme-content">
+
+          <h3>Outreach & Evangelism</h3>
+
+          <p>
+            Taking the message and love of Jesus Christ
+            beyond the church into our communities.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BIBLE VERSE -->
+  <section class="verse">
+
+    <blockquote>
+      “Jesus Christ the same yesterday, and today,
+      and forever.”
+    </blockquote>
+
+    <cite>
+      HEBREWS 13:8
+    </cite>
+
+  </section>
+
+
+  <!-- SERMONS -->
+  <section class="sermons" id="sermons">
+
+    <div class="heading-center">
+
+      <div class="section-label">
+        Messages
+      </div>
+
+      <h2 class="section-title">
+        Latest Sermons
+      </h2>
+
+      <p>
+        Be encouraged and strengthened through the Word of God.
+      </p>
+
+    </div>
+
+
+    <div class="sermon-grid">
+
+      <div class="sermon">
+
+        <div class="sermon-date">
+          SERMON 01
+        </div>
+
+        <h3>
+          The God of Now
+        </h3>
+
+        <p>
+          Discover what it means to trust God for your
+          present situation and future.
+        </p>
+
+        <a href="#" class="watch">
+          ▶ WATCH SERMON
+        </a>
+
+      </div>
+
+
+      <div class="sermon">
+
+        <div class="sermon-date">
+          SERMON 02
+        </div>
+
+        <h3>
+          Walking by Faith
+        </h3>
+
+        <p>
+          Learn how to walk confidently with God even
+          when you cannot see the road ahead.
+        </p>
+
+        <a href="#" class="watch">
+          ▶ WATCH SERMON
+        </a>
+
+      </div>
+
+
+      <div class="sermon">
+
+        <div class="sermon-date">
+          SERMON 03
+        </div>
+
+        <h3>
+          Your Season of Restoration
+        </h3>
+
+        <p>
+          A message of hope, restoration and divine
+          intervention.
+        </p>
+
+        <a href="#" class="watch">
+          ▶ WATCH SERMON
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRAYER REQUEST -->
+  <section class="prayer" id="prayer">
+
+    <div class="prayer-box">
+
+      <div>
+
+        <div class="section-label">
+          We Want to Pray With You
+        </div>
+
+        <h2 class="section-title">
+          Submit Your Prayer Request
+        </h2>
+
+        <p>
+          Whatever you are going through, you don't have
+          to face it alone. Send us your prayer request and
+          our prayer team will stand with you in faith.
+        </p>
+
+      </div>
+
+
+      <form onsubmit="submitPrayer(event)">
+
+        <input
+          type="text"
+          placeholder="Your Name"
+          required
+        >
+
+        <input
+          type="email"
+          placeholder="Email Address"
+          required
+        >
+
+        <textarea
+          placeholder="Write your prayer request..."
+          required
+        ></textarea>
+
+        <button class="btn btn-gold" type="submit">
+          SEND PRAYER REQUEST
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- GIVE -->
+  <section class="give" id="give">
+
+    <div class="section-label">
+      Give & Support God's Work
+    </div>
+
+    <h2 class="section-title">
+      Your Giving Makes a Difference
+    </h2>
+
+    <p>
+      Your generosity helps support the work of the ministry,
+      evangelism, community outreach and the spreading of
+      the Gospel.
+    </p>
+
+    <a href="#contact" class="btn btn-gold">
+      GIVE / OFFERING
+    </a>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="heading-center">
+
+      <div class="section-label">
+        Contact Us
+      </div>
+
+      <h2 class="section-title">
+        We'd Love to Hear From You
+      </h2>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+
+        <div class="icon">📍</div>
+
+        <h3>Our Location</h3>
+
+        <p>
+          Church Address<br>
+          Your City, Nigeria
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <div class="icon">📞</div>
+
+        <h3>Call Us</h3>
+
+        <p>
+          +234 XXX XXX XXXX<br>
+          +234 XXX XXX XXXX
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <div class="icon">✉️</div>
+
+        <h3>Email Us</h3>
+
+        <p>
+          info@godofnownowministry.org
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h3>God of Now Now International Ministry</h3>
+
+        <p>
+          A place of faith, prayer, worship, restoration
+          and transformation.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>Quick Links</h3>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programmes">Ministries</a></li>
+          <li><a href="#sermons">Sermons</a></li>
+          <li><a href="#prayer">Prayer Request</a></li>
+          <li><a href="#give">Giving</a></li>
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>Service Times</h3>
+
+        <p>
+          Sunday Worship<br>
+          8:00 AM – 11:00 AM
+        </p>
+
+        <br>
+
+        <p>
+          Tuesday Prayer<br>
+          5:00 PM – 7:00 PM
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 God of Now Now International Ministry.
+      All Rights Reserved.
+
+    </div>
+
+  </footer>
+
+
+  <!-- WHATSAPP -->
+  <a
+    class="whatsapp"
+    href="https://wa.me/2340000000000"
+    target="_blank"
+    aria-label="Chat on WhatsApp"
+  >
+    ☎
+  </a>
+
+
+  <script>
+
+    function toggleMenu() {
+
+      document
+        .getElementById("navLinks")
+        .classList.toggle("active");
+
+    }
+
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        document
+          .getElementById("navLinks")
+          .classList.remove("active");
+
+      });
+
+    });
+
+
+    function submitPrayer(event) {
+
+      event.preventDefault();
+
+      alert(
+        "Thank you for sharing your prayer request. Our prayer team will stand with you in faith."
+      );
+
+      event.target.reset();
+
+    }
+
+  </script>
+
+</body>
+</html>
