@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Testimonies | God of Now Now International Ministry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    color:#222;
+    line-height:1.7;
+    background:#fff;
+}
+
+:root{
+    --gold:#b58b28;
+    --light-gold:#e5c15b;
+    --black:#111;
+    --dark:#080808;
+    --cream:#f5f1e8;
+    --gray:#666;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#111;
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.navbar{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#fff;
+    text-decoration:none;
+    font-size:19px;
+    font-weight:800;
+    line-height:1.2;
+    max-width:290px;
+}
+
+.logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+    margin-top:5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:var(--light-gold);
+}
+
+.menu-toggle{
+    display:none;
+    color:#fff;
+    font-size:29px;
+    cursor:pointer;
+}
+
+/* HERO */
+.hero{
+    min-height:440px;
+    background:
+        linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),
+        url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(45px,7vw,75px);
+}
+
+.hero p{
+    max-width:720px;
+    margin:15px auto 0;
+    color:#eee;
+    font-size:17px;
+}
+
+.gold-line{
+    width:80px;
+    height:4px;
+    background:var(--light-gold);
+    margin:22px auto;
+}
+
+/* GENERAL */
+section{
+    padding:85px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:48px;
+}
+
+.section-title h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:12px auto;
+    color:var(--gray);
+}
+
+/* TESTIMONIES */
+.testimonies{
+    background:var(--cream);
+}
+
+.testimony-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.testimony-card{
+    background:#fff;
+    padding:32px 28px;
+    border-radius:8px;
+    box-shadow:0 7px 25px rgba(0,0,0,.07);
+    position:relative;
+}
+
+.quote{
+    font-family:Georgia,serif;
+    font-size:55px;
+    color:var(--light-gold);
+    line-height:1;
+    margin-bottom:5px;
+}
+
+.testimony-card p{
+    color:#555;
+    font-size:14px;
+    font-style:italic;
+}
+
+.testimony-author{
+    border-top:1px solid #eee;
+    margin-top:22px;
+    padding-top:15px;
+}
+
+.testimony-author strong{
+    display:block;
+    font-size:14px;
+}
+
+.testimony-author span{
+    color:var(--gold);
+    font-size:11px;
+}
+
+/* FORM */
+.share{
+    background:#fff;
+}
+
+.share-grid{
+    display:grid;
+    grid-template-columns:1fr 1.15fr;
+    gap:55px;
+    align-items:start;
+}
+
+.share-info h2{
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    margin-bottom:18px;
+}
+
+.share-info p{
+    color:var(--gray);
+    margin-bottom:18px;
+}
+
+.highlight{
+    background:var(--cream);
+    border-left:4px solid var(--gold);
+    padding:25px;
+    margin-top:25px;
+}
+
+.highlight strong{
+    display:block;
+    margin-bottom:7px;
+}
+
+.form-box{
+    padding:40px;
+    border:1px solid #eee;
+    box-shadow:0 10px 35px rgba(0,0,0,.09);
+    border-radius:9px;
+}
+
+.form-box h2{
+    font-family:'Playfair Display',serif;
+    font-size:31px;
+    margin-bottom:8px;
+}
+
+.form-intro{
+    color:var(--gray);
+    font-size:13px;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:7px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:4px;
+    font-family:'Montserrat',sans-serif;
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color:var(--gold);
+}
+
+.form-group textarea{
+    min-height:170px;
+    resize:vertical;
+}
+
+.checkbox{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    color:var(--gray);
+    font-size:12px;
+    margin-bottom:20px;
+}
+
+.submit-btn{
+    width:100%;
+    padding:15px;
+    border:0;
+    border-radius:4px;
+    background:var(--gold);
+    color:#fff;
+    font-weight:800;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#111;
+}
+
+/* SCRIPTURE */
+.scripture{
+    background:
+        linear-gradient(rgba(8,8,8,.90),rgba(8,8,8,.90)),
+        url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    color:#fff;
+    text-align:center;
+}
+
+.scripture blockquote{
+    max-width:850px;
+    margin:auto;
+    font-family:'Playfair Display',serif;
+    font-size:31px;
+    line-height:1.5;
+}
+
+.scripture cite{
+    display:block;
+    margin-top:20px;
+    color:var(--light-gold);
+    font-family:'Montserrat',sans-serif;
+    font-size:14px;
+    font-style:normal;
+    font-weight:700;
+}
+
+/* CTA */
+.cta{
+    background:var(--gold);
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:0 auto 28px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#fff;
+    color:#111;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:700;
+}
+
+.btn.dark{
+    background:#111;
+    color:#fff;
+    margin-left:8px;
+}
+
+/* FOOTER */
+footer{
+    background:var(--dark);
+    color:#ccc;
+    padding:65px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.4fr;
+    gap:40px;
+}
+
+.footer-col h3{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+.footer-col p{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col li{
+    margin-bottom:9px;
+}
+
+.footer-col a{
+    color:#bbb;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.footer-col a:hover{
+    color:var(--light-gold);
+}
+
+.footer-logo{
+    color:#fff;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.footer-logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+.copyright{
+    border-top:1px solid #292929;
+    margin-top:45px;
+    padding-top:22px;
+    text-align:center;
+    font-size:12px;
+    color:#888;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:24px;
+    z-index:999;
+    box-shadow:0 5px 18px rgba(0,0,0,.3);
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+
+    .nav-links{
+        gap:10px;
+    }
+
+    .testimony-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:800px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:78px;
+        left:0;
+        width:100%;
+        background:#111;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:20px 5%;
+        display:none;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+        padding:7px 0;
+    }
+
+    .share-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:65px 0;
+    }
+
+    .hero{
+        min-height:390px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .section-title h2,
+    .share-info h2,
+    .cta h2{
+        font-size:34px;
+    }
+
+    .testimony-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-box{
+        padding:25px 20px;
+    }
+
+    .scripture blockquote{
+        font-size:24px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+        max-width:280px;
+        margin:10px auto !important;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+<div class="container navbar">
+
+<a href="index.html" class="logo">
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+<span>EXPERIENCE THE GOD OF NOW</span>
+</a>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="leadership.html">Leadership</a></li>
+<li><a href="ministries.html">Ministries</a></li>
+<li><a href="sermons.html">Sermons</a></li>
+<li><a href="media.html">Media</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="prayer.html">Prayer</a></li>
+<li><a href="testimonies.html" class="active">Testimonies</a></li>
+<li><a href="give.html">Give</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="container hero-content">
+
+<h1>Testimonies</h1>
+
+<div class="gold-line"></div>
+
+<p>
+Celebrate what God is doing. Read testimonies of God's faithfulness
+and share your own testimony with the church.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- TESTIMONIES -->
+<section class="testimonies">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>What God Has Done</h2>
+
+<p>
+Every testimony is a reminder that God is still working in the lives
+of His people.
+</p>
+
+</div>
+
+<div class="testimony-grid">
+
+<div class="testimony-card">
+
+<div class="quote">“</div>
+
+<p>
+God answered my prayer at a time when I had almost lost hope.
+I am grateful for His mercy and faithfulness.
+</p>
+
+<div class="testimony-author">
+<strong>A Grateful Worshipper</strong>
+<span>Testimony</span>
+</div>
+
+</div>
+
+
+<div class="testimony-card">
+
+<div class="quote">“</div>
+
+<p>
+Through prayer and the Word of God, I received renewed strength
+and encouragement. God has been faithful to me and my family.
+</p>
+
+<div class="testimony-author">
+<strong>A Church Member</strong>
+<span>Testimony</span>
+</div>
+
+</div>
+
+
+<div class="testimony-card">
+
+<div class="quote">“</div>
+
+<p>
+I came trusting God for an encounter, and my faith was strengthened.
+I thank God for everything He continues to do.
+</p>
+
+<div class="testimony-author">
+<strong>A Worshipper</strong>
+<span>Testimony</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SHARE TESTIMONY -->
+<section class="share">
+
+<div class="container share-grid">
+
+<div class="share-info">
+
+<h2>Share Your Testimony</h2>
+
+<p>
+Has God answered your prayer? Has He changed your story?
+We would love to celebrate God's goodness with you.
+</p>
+
+<p>
+Your testimony can encourage someone else who is currently
+waiting on God.
+</p>
+
+<div class="highlight">
+
+<strong>Your Story Can Inspire Someone</strong>
+
+<p>
+Share what God has done in your life and give Him all the glory.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="form-box">
+
+<h2>Submit Your Testimony</h2>
+
+<p class="form-intro">
+Complete the form below to share your testimony with the ministry.
+</p>
+
+<form action="mailto:" method="post" enctype="text/plain">
+
+<div class="form-group">
+
+<label for="name">
+Full Name
+</label>
+
+<input
+type="text"
+id="name"
+name="Name"
+placeholder="Enter your name"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="phone">
+Phone Number
+</label>
+
+<input
+type="tel"
+id="phone"
+name="Phone"
+placeholder="+234..."
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="title">
+Testimony Title
+</label>
+
+<input
+type="text"
+id="title"
+name="Testimony Title"
+placeholder="Give your testimony a title"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="testimony">
+Your Testimony
+</label>
+
+<textarea
+id="testimony"
+name="Testimony"
+placeholder="Tell us what God has done..."
+required></textarea>
+
+</div>
+
+
+<label class="checkbox">
+
+<input type="checkbox" required>
+
+<span>
+I give permission for the ministry to review my testimony before
+publishing it on the church website or social media.
+</span>
+
+</label>
+
+
+<button type="submit" class="submit-btn">
+SUBMIT TESTIMONY
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SCRIPTURE -->
+<section class="scripture">
+
+<div class="container">
+
+<blockquote>
+
+“Oh give thanks to the Lord, for he is good;
+for his steadfast love endures forever!”
+
+<cite>
+— Psalm 107:1
+</cite>
+
+</blockquote>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Your Testimony Is Coming
+</h2>
+
+<p>
+Keep trusting God. Keep praying. Keep believing.
+Your story can become a testimony.
+</p>
+
+<a href="prayer.html" class="btn">
+Send Prayer Request
+</a>
+
+<a href="events.html" class="btn dark">
+View Church Events
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-col">
+
+<div class="footer-logo">
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+<span>EXPERIENCE THE GOD OF NOW</span>
+</div>
+
+<p>
+A ministry committed to helping people encounter God,
+grow in faith and discover their purpose.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="leadership.html">Leadership</a></li>
+<li><a href="ministries.html">Ministries</a></li>
+<li><a href="sermons.html">Sermons</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Explore</h3>
+
+<ul>
+
+<li><a href="media.html">Media</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="prayer.html">Prayer</a></li>
+<li><a href="testimonies.html">Testimonies</a></li>
+<li><a href="give.html">Give</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Contact Us</h3>
+
+<p>
+7 Ishaga Street Agbelekale Ekoro-Command Road
+Abulegba Lagos Nigeria
+</p>
+
+<p>
+Office: +2348139102599
+</p>
+
+<p>
+Private: +2348150990331
+</p>
+
+<p>
+<a href="contact.html">
+Visit Contact Page →
+</a>
+</p>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 God of Now Now International Ministry.
+All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+
+<a
+class="whatsapp"
+href="https://wa.me/2348139102599"
+target="_blank"
+aria-label="WhatsApp">
+
+☎
+
+</a>
+
+
+<script>
+
+function toggleMenu(){
+
+document
+.querySelector(".nav-links")
+.classList
+.toggle("show");
+
+}
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+document
+.querySelector(".nav-links")
+.classList
+.remove("show");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
