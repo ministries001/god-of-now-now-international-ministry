@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Terms & Conditions | God of Now Now International Ministry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    color:#222;
+    background:#fff;
+    line-height:1.8;
+}
+
+:root{
+    --gold:#b58b28;
+    --light-gold:#e5c15b;
+    --black:#111;
+    --dark:#080808;
+    --cream:#f5f1e8;
+    --gray:#666;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#111;
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.navbar{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#fff;
+    text-decoration:none;
+    font-size:19px;
+    font-weight:800;
+    line-height:1.2;
+    max-width:290px;
+}
+
+.logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+    margin-top:5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:var(--light-gold);
+}
+
+.menu-toggle{
+    display:none;
+    color:#fff;
+    font-size:29px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:400px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.82)),
+    url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(42px,7vw,70px);
+}
+
+.gold-line{
+    width:80px;
+    height:4px;
+    background:var(--light-gold);
+    margin:22px auto;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#eee;
+    font-size:16px;
+}
+
+/* ================= TERMS ================= */
+
+.terms-section{
+    padding:80px 0;
+    background:#fff;
+}
+
+.terms-container{
+    max-width:950px;
+    margin:auto;
+}
+
+.last-updated{
+    background:var(--cream);
+    border-left:4px solid var(--gold);
+    padding:18px 22px;
+    margin-bottom:40px;
+    font-size:13px;
+    color:#555;
+}
+
+.term-block{
+    margin-bottom:40px;
+}
+
+.term-block h2{
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    margin-bottom:13px;
+    color:#111;
+}
+
+.term-block p{
+    color:#555;
+    font-size:14px;
+    margin-bottom:13px;
+}
+
+.term-block ul{
+    padding-left:25px;
+    color:#555;
+    font-size:14px;
+}
+
+.term-block li{
+    margin-bottom:8px;
+}
+
+.notice{
+    background:#fff8e3;
+    border:1px solid #ead89b;
+    border-radius:7px;
+    padding:25px;
+    margin:30px 0;
+}
+
+.notice strong{
+    color:#8b6815;
+}
+
+.contact-box{
+    background:var(--cream);
+    padding:30px;
+    border-radius:7px;
+    margin-top:20px;
+}
+
+.contact-box h3{
+    font-family:'Playfair Display',serif;
+    font-size:25px;
+    margin-bottom:10px;
+}
+
+.contact-box p{
+    margin-bottom:8px;
+}
+
+.contact-box a{
+    color:var(--gold);
+    text-decoration:none;
+    font-weight:700;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:var(--gold);
+    color:#fff;
+    text-align:center;
+    padding:75px 0;
+}
+
+.cta h2{
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:0 auto 25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#fff;
+    color:#111;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#111;
+    color:#fff;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:var(--dark);
+    color:#ccc;
+    padding:65px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.4fr;
+    gap:40px;
+}
+
+.footer-col h3{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+.footer-col p{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col li{
+    margin-bottom:9px;
+}
+
+.footer-col a{
+    color:#bbb;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.footer-col a:hover{
+    color:var(--light-gold);
+}
+
+.footer-logo{
+    color:#fff;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.footer-logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+.copyright{
+    border-top:1px solid #292929;
+    margin-top:45px;
+    padding-top:22px;
+    text-align:center;
+    font-size:12px;
+    color:#888;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:24px;
+    z-index:999;
+    box-shadow:0 5px 18px rgba(0,0,0,.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .nav-links{
+        gap:10px;
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:800px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:78px;
+        left:0;
+        width:100%;
+        background:#111;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:20px 5%;
+        display:none;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+        padding:7px 0;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+        min-height:350px;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .terms-section{
+        padding:60px 0;
+    }
+
+    .term-block h2{
+        font-size:27px;
+    }
+
+    .cta h2{
+        font-size:33px;
+    }
+
+    .btn{
+        width:100%;
+        max-width:280px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="index.html" class="logo">
+
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+
+<span>
+EXPERIENCE THE GOD OF NOW
+</span>
+
+</a>
+
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+
+<ul class="nav-links">
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+<li>
+<a href="leadership.html">Leadership</a>
+</li>
+
+<li>
+<a href="ministries.html">Ministries</a>
+</li>
+
+<li>
+<a href="sermons.html">Sermons</a>
+</li>
+
+<li>
+<a href="media.html">Media</a>
+</li>
+
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+
+<li>
+<a href="news.html">News</a>
+</li>
+
+<li>
+<a href="activities.html">Activities</a>
+</li>
+
+<li>
+<a href="events.html">Events</a>
+</li>
+
+<li>
+<a href="prayer.html">Prayer</a>
+</li>
+
+<li>
+<a href="testimonies.html">Testimonies</a>
+</li>
+
+<li>
+<a href="faq.html">FAQ</a>
+</li>
+
+<li>
+<a href="give.html">Give</a>
+</li>
+
+<li>
+<a href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<h1>Terms & Conditions</h1>
+
+<div class="gold-line"></div>
+
+<p>
+Please read these terms carefully before using the
+God of Now Now International Ministry website.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= TERMS ================= -->
+
+<section class="terms-section">
+
+<div class="container terms-container">
+
+
+<div class="last-updated">
+
+<strong>Last Updated:</strong> September 4, 2026
+
+</div>
+
+
+<div class="notice">
+
+<strong>Important Notice:</strong>
+
+<p>
+This page provides general website terms for visitors and users
+of the ministry's website. It is not a substitute for legal advice.
+</p>
+
+</div>
+
+
+<!-- 1 -->
+
+<div class="term-block">
+
+<h2>1. Acceptance of These Terms</h2>
+
+<p>
+By accessing or using the God of Now Now International Ministry
+website, you acknowledge that you have read and understood these
+Terms & Conditions and agree to use the website responsibly.
+</p>
+
+<p>
+If you do not agree with these terms, please discontinue use of
+the website.
+</p>
+
+</div>
+
+
+<!-- 2 -->
+
+<div class="term-block">
+
+<h2>2. About the Website</h2>
+
+<p>
+This website is provided to share information about
+God of Now Now International Ministry, including church activities,
+programmes, events, teachings, media, testimonies, prayer
+opportunities and ways to contact or support the ministry.
+</p>
+
+</div>
+
+
+<!-- 3 -->
+
+<div class="term-block">
+
+<h2>3. Website Content</h2>
+
+<p>
+We make reasonable efforts to keep information on the website
+accurate and useful. However, information about programmes,
+events, activities and schedules may change.
+</p>
+
+<p>
+The ministry reserves the right to update, modify, remove or
+correct website content when necessary.
+</p>
+
+</div>
+
+
+<!-- 4 -->
+
+<div class="term-block">
+
+<h2>4. Church Activities and Programmes</h2>
+
+<p>
+Church programmes, services, meetings and events displayed on
+the website are subject to change, postponement or cancellation.
+</p>
+
+<p>
+Visitors are encouraged to contact the church directly when they
+need confirmation of a particular programme or event.
+</p>
+
+</div>
+
+
+<!-- 5 -->
+
+<div class="term-block">
+
+<h2>5. Prayer Requests</h2>
+
+<p>
+Prayer requests submitted through the website are received for
+ministry and prayer purposes.
+</p>
+
+<p>
+Submitting a prayer request does not create a guarantee of a
+particular outcome. The ministry encourages visitors to seek
+appropriate professional assistance where a matter requires
+medical, legal, financial or other specialist advice.
+</p>
+
+</div>
+
+
+<!-- 6 -->
+
+<div class="term-block">
+
+<h2>6. Testimonies</h2>
+
+<p>
+Visitors may submit testimonies through the website.
+All submitted testimonies may be reviewed before publication.
+</p>
+
+<p>
+The ministry may decide whether or not to publish a testimony
+and may edit submitted content for spelling, clarity, formatting
+or length while seeking to preserve its intended meaning.
+</p>
+
+</div>
+
+
+<!-- 7 -->
+
+<div class="term-block">
+
+<h2>7. User Responsibilities</h2>
+
+<p>
+When using forms or other interactive features on the website,
+you agree not to submit content that:
+</p>
+
+<ul>
+
+<li>Is knowingly false or misleading.</li>
+
+<li>Impersonates another person.</li>
+
+<li>Contains unlawful or harmful material.</li>
+
+<li>Infringes another person's rights.</li>
+
+<li>Contains malicious software or harmful code.</li>
+
+<li>Is intended to disrupt the operation of the website.</li>
+
+</ul>
+
+</div>
+
+
+<!-- 8 -->
+
+<div class="term-block">
+
+<h2>8. Intellectual Property</h2>
+
+<p>
+Unless otherwise stated, website text, graphics, logos, photographs,
+videos and other original materials associated with the ministry
+may be protected by applicable intellectual property laws.
+</p>
+
+<p>
+You should not reproduce, modify, distribute or commercially use
+protected materials without appropriate permission.
+</p>
+
+</div>
+
+
+<!-- 9 -->
+
+<div class="term-block">
+
+<h2>9. Church Media</h2>
+
+<p>
+The website may contain photographs, videos, sermons, audio
+recordings and other media from church services and events.
+</p>
+
+<p>
+Media may be used for ministry communication, teaching,
+documentation and outreach purposes.
+</p>
+
+</div>
+
+
+<!-- 10 -->
+
+<div class="term-block">
+
+<h2>10. External Websites</h2>
+
+<p>
+The website may contain links to third-party websites and services.
+These links are provided for convenience and information.
+</p>
+
+<p>
+God of Now Now International Ministry does not control external
+websites and is not responsible for their content, availability
+or privacy practices.
+</p>
+
+</div>
+
+
+<!-- 11 -->
+
+<div class="term-block">
+
+<h2>11. Giving and Donations</h2>
+
+<p>
+Where giving or donation information is provided on the website,
+users should carefully confirm the account details before making
+a transfer.
+</p>
+
+<p>
+For clarification regarding church giving, please contact the
+ministry using the official contact information displayed on this
+website.
+</p>
+
+</div>
+
+
+<!-- 12 -->
+
+<div class="term-block">
+
+<h2>12. Website Availability</h2>
+
+<p>
+We aim to keep the website available and functioning properly.
+However, uninterrupted availability cannot be guaranteed.
+</p>
+
+<p>
+The website may occasionally be unavailable because of maintenance,
+technical problems, hosting issues, updates or circumstances beyond
+the ministry's control.
+</p>
+
+</div>
+
+
+<!-- 13 -->
+
+<div class="term-block">
+
+<h2>13. Limitation of Responsibility</h2>
+
+<p>
+Information on this website is provided for general informational
+and ministry purposes.
+</p>
+
+<p>
+The ministry does not guarantee that every piece of information
+will always be complete, current or error-free.
+</p>
+
+</div>
+
+
+<!-- 14 -->
+
+<div class="term-block">
+
+<h2>14. Privacy</h2>
+
+<p>
+Your use of this website is also subject to our
+<a href="privacy.html" style="color:#b58b28;font-weight:700;">
+Privacy Policy
+</a>.
+</p>
+
+</div>
+
+
+<!-- 15 -->
+
+<div class="term-block">
+
+<h2>15. Changes to These Terms</h2>
+
+<p>
+God of Now Now International Ministry may update these
+Terms & Conditions from time to time.
+</p>
+
+<p>
+Updated terms will be posted on this page. Continued use of the
+website after an update means that you acknowledge the revised
+terms.
+</p>
+
+</div>
+
+
+<!-- 16 -->
+
+<div class="term-block">
+
+<h2>16. Contact the Ministry</h2>
+
+<p>
+If you have questions about these Terms & Conditions,
+please contact God of Now Now International Ministry.
+</p>
+
+
+<div class="contact-box">
+
+<h3>
+God of Now Now International Ministry
+</h3>
+
+<p>
+
+<strong>Church Address:</strong><br>
+
+7 Ishaga Street Agbelekale,
+Ekoro-Command Road,
+Abulegba, Lagos, Nigeria.
+
+</p>
+
+<p>
+
+<strong>Office Line:</strong><br>
+
+<a href="tel:+2348139102599">
++2348139102599
+</a>
+
+</p>
+
+<p>
+
+<strong>Private Line:</strong><br>
+
+<a href="tel:+2348150990331">
++2348150990331
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Thank You for Visiting
+</h2>
+
+<p>
+Thank you for connecting with God of Now Now International Ministry.
+We pray that this website will be a blessing and source of
+encouragement to you.
+</p>
+
+<a href="index.html" class="btn">
+Return Home
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div class="footer-col">
+
+<div class="footer-logo">
+
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+
+<span>
+EXPERIENCE THE GOD OF NOW
+</span>
+
+</div>
+
+<p>
+A ministry committed to helping people encounter God,
+grow in faith and discover their purpose.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+<li>
+<a href="leadership.html">Leadership</a>
+</li>
+
+<li>
+<a href="ministries.html">Ministries</a>
+</li>
+
+<li>
+<a href="sermons.html">Sermons</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Explore</h3>
+
+<ul>
+
+<li>
+<a href="media.html">Media</a>
+</li>
+
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+
+<li>
+<a href="news.html">News</a>
+</li>
+
+<li>
+<a href="activities.html">Activities</a>
+</li>
+
+<li>
+<a href="events.html">Events</a>
+</li>
+
+<li>
+<a href="prayer.html">Prayer</a>
+</li>
+
+<li>
+<a href="testimonies.html">Testimonies</a>
+</li>
+
+<li>
+<a href="faq.html">FAQ</a>
+</li>
+
+<li>
+<a href="give.html">Give</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Contact Us</h3>
+
+<p>
+7 Ishaga Street Agbelekale
+Ekoro-Command Road
+Abulegba Lagos Nigeria
+</p>
+
+<p>
+Office:
++2348139102599
+</p>
+
+<p>
+Private:
++2348150990331
+</p>
+
+<p>
+
+<a href="contact.html">
+Visit Contact Page →
+</a>
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 God of Now Now International Ministry.
+All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/2348139102599"
+target="_blank"
+aria-label="Contact us on WhatsApp">
+
+☎
+
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function toggleMenu(){
+
+document
+.querySelector(".nav-links")
+.classList
+.toggle("show");
+
+}
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+document
+.querySelector(".nav-links")
+.classList
+.remove("show");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
