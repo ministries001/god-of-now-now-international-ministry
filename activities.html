@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weekly & Special Activities | God of Now Now International Ministry</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #b58b28;
+      --light-gold: #e5c15b;
+      --black: #111111;
+      --dark: #080808;
+      --cream: #f5f1e8;
+      --white: #ffffff;
+      --gray: #666666;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--black);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--black);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 16px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--light-gold);
+      line-height: 1.2;
+    }
+
+    .logo span {
+      display: block;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-top: 4px;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+
+    nav a {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--light-gold);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 430px;
+      background:
+        linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.75)),
+        url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1600&q=85")
+        center/cover no-repeat;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 60px 20px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-content small {
+      color: var(--light-gold);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(42px, 7vw, 72px);
+      margin: 12px 0;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: auto;
+      font-size: 16px;
+      color: #eee;
+    }
+
+    /* INTRO */
+    .intro {
+      padding: 80px 20px 50px;
+      text-align: center;
+      background: var(--white);
+    }
+
+    .section-label {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .intro h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      max-width: 760px;
+      margin: auto;
+      color: var(--gray);
+    }
+
+    /* ACTIVITIES */
+    .activities-section {
+      background: var(--cream);
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: var(--gray);
+    }
+
+    .activities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .activity-card {
+      background: white;
+      padding: 35px 28px;
+      border-radius: 10px;
+      border-top: 4px solid var(--gold);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+      transition: 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .activity-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+
+    .activity-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: var(--black);
+      color: var(--light-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .activity-card .day {
+      color: var(--gold);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .activity-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .activity-card .time {
+      display: inline-block;
+      background: #f3ead2;
+      color: #705512;
+      padding: 7px 13px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .activity-card p {
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    /* FEATURED NIGHT */
+    .encounter {
+      padding: 90px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.88)),
+        url("https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=1600&q=85")
+        center/cover no-repeat;
+      color: white;
+      text-align: center;
+    }
+
+    .encounter-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .encounter .section-label {
+      color: var(--light-gold);
+    }
+
+    .encounter h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(40px, 6vw, 65px);
+      color: white;
+      margin: 10px 0 20px;
+    }
+
+    .encounter p {
+      color: #ddd;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .encounter-box {
+      margin: 35px auto 0;
+      max-width: 500px;
+      padding: 22px;
+      border: 1px solid rgba(229,193,91,0.55);
+      background: rgba(181,139,40,0.08);
+      border-radius: 8px;
+    }
+
+    .encounter-box strong {
+      color: var(--light-gold);
+      font-size: 18px;
+    }
+
+    /* SPECIAL PROGRAMS */
+    .special-programs {
+      padding: 80px 20px;
+      background: white;
+    }
+
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .program-card {
+      padding: 38px 30px;
+      border: 1px solid #e6e0d2;
+      background: #fff;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .program-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-5px);
+    }
+
+    .program-number {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .program-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 27px;
+      margin-bottom: 15px;
+    }
+
+    .program-card p {
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    .program-date {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 9px 15px;
+      background: var(--black);
+      color: var(--light-gold);
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* QUARTERLY */
+    .quarterly {
+      background: var(--cream);
+      padding: 80px 20px;
+    }
+
+    .quarterly-box {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 50px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+    }
+
+    .quarterly-box h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .quarterly-box p {
+      color: var(--gray);
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .quarterly-badge {
+      display: inline-block;
+      margin-top: 25px;
+      background: var(--gold);
+      color: white;
+      padding: 12px 22px;
+      border-radius: 5px;
+      font-weight: 700;
+    }
+
+    /* SCRIPTURE */
+    .scripture {
+      background: var(--black);
+      color: white;
+      text-align: center;
+      padding: 75px 20px;
+    }
+
+    .scripture blockquote {
+      max-width: 850px;
+      margin: auto;
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      line-height: 1.5;
+    }
+
+    .scripture cite {
+      display: block;
+      margin-top: 18px;
+      color: var(--light-gold);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* CTA */
+    .cta {
+      padding: 80px 20px;
+      text-align: center;
+      background: var(--white);
+    }
+
+    .cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: var(--gray);
+      max-width: 650px;
+      margin: auto auto 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--gold);
+      color: white;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 13px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--black);
+      color: var(--light-gold);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: #ccc;
+      padding: 60px 20px 25px;
+    }
+
+    .footer-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 40px;
+    }
+
+    .footer-brand h3 {
+      color: var(--light-gold);
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 13px;
+      line-height: 1.8;
+      color: #aaa;
+    }
+
+    footer h4 {
+      color: white;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    footer a {
+      display: block;
+      font-size: 13px;
+      color: #aaa;
+      margin-bottom: 8px;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: var(--light-gold);
+    }
+
+    .footer-contact {
+      font-size: 13px;
+      color: #aaa;
+      line-height: 1.9;
+    }
+
+    .copyright {
+      max-width: 1150px;
+      margin: 40px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #292929;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 55px;
+      height: 55px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      z-index: 999;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background: var(--black);
+        flex-direction: column;
+        padding: 25px;
+        gap: 18px;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .activities-grid,
+      .program-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .nav-container {
+        padding: 14px 18px;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .hero {
+        min-height: 380px;
+      }
+
+      .intro h2,
+      .section-title h2,
+      .cta h2 {
+        font-size: 32px;
+      }
+
+      .activities-grid,
+      .program-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .activity-card {
+        padding: 30px 24px;
+      }
+
+      .quarterly-box {
+        padding: 35px 22px;
+      }
+
+      .quarterly-box h2 {
+        font-size: 32px;
+      }
+
+      .scripture blockquote {
+        font-size: 23px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="nav-container">
+
+    <a href="index.html" class="logo">
+      GOD OF NOW NOW
+      <span>INTERNATIONAL MINISTRY</span>
+    </a>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="ministries.html">Ministries</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="news.html">News</a>
+      <a href="prayer.html">Prayer</a>
+      <a href="give.html">Give</a>
+      <a href="contact.html">Contact</a>
+      <a href="activities.html" class="active">Activities</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+
+    <small>Experience the God of Now</small>
+
+    <h1>Church Activities</h1>
+
+    <p>
+      Join us throughout the week and throughout the year
+      for powerful services, encounters, prayers, healing,
+      deliverance and spiritual transformation.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- INTRO -->
+<section class="intro">
+
+  <div class="section-label">Our Schedule</div>
+
+  <h2>Weekly Activities</h2>
+
+  <p>
+    At God of Now Now International Ministry, we believe that
+    every gathering is an opportunity to encounter God.
+    Come expecting His presence, His power and His word.
+  </p>
+
+</section>
+
+
+<!-- WEEKLY ACTIVITIES -->
+<section class="activities-section">
+
+  <div class="container">
+
+    <div class="section-title">
+      <div class="section-label">Join Us</div>
+      <h2>Weekly Services</h2>
+      <p>Make time for God's presence and experience His power.</p>
+    </div>
+
+
+    <div class="activities-grid">
+
+      <!-- TUESDAY -->
+      <div class="activity-card">
+
+        <div class="activity-icon">🙏</div>
+
+        <div class="day">Every Tuesday</div>
+
+        <h3>One on One with The Prophet</h3>
+
+        <span class="time">9:00 AM – 4:00 PM</span>
+
+        <p>
+          A special opportunity for personal spiritual counsel,
+          prayer, direction and one-on-one ministry with
+          The Prophet.
+        </p>
+
+      </div>
+
+
+      <!-- THURSDAY -->
+      <div class="activity-card">
+
+        <div class="activity-icon">🔥</div>
+
+        <div class="day">Every Thursday</div>
+
+        <h3>Deliverance & Healing Service</h3>
+
+        <span class="time">9:00 AM – 1:00 PM</span>
+
+        <p>
+          A powerful service dedicated to prayer, healing,
+          deliverance and experiencing the transforming
+          power of God.
+        </p>
+
+      </div>
+
+
+      <!-- FRIDAY -->
+      <div class="activity-card">
+
+        <div class="activity-icon">🌙</div>
+
+        <div class="day">First Friday</div>
+
+        <h3>Night of Encounter</h3>
+
+        <span class="time">10:00 PM Vigil</span>
+
+        <p>
+          A night of intense prayer, worship and spiritual
+          encounter as we seek the presence and power of God.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- NIGHT OF ENCOUNTER -->
+<section class="encounter">
+
+  <div class="encounter-content">
+
+    <div class="section-label">Every First Friday</div>
+
+    <h2>NIGHT OF ENCOUNTER</h2>
+
+    <p>
+      Come with expectation. Come with faith. Come ready for
+      an encounter that can change your life.
+    </p>
+
+    <div class="encounter-box">
+      <strong>10:00 PM — VIGIL</strong>
+      <br>
+      <span>
+        Prayer • Worship • Deliverance • Healing • Prophetic Ministry
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SPECIAL PROGRAMS -->
+<section class="special-programs">
+
+  <div class="container">
+
+    <div class="section-title">
+      <div class="section-label">Special Gatherings</div>
+      <h2>Annual & Special Programs</h2>
+      <p>
+        Special seasons of prayer, power, thanksgiving and spiritual renewal.
+      </p>
+    </div>
+
+
+    <div class="program-grid">
+
+      <!-- QUARTERLY -->
+      <div class="program-card">
+
+        <div class="program-number">Quarterly Program</div>
+
+        <h3>Power Jam Powers</h3>
+
+        <p>
+          A special quarterly gathering focused on prayer,
+          worship, spiritual empowerment and experiencing
+          the mighty power of God.
+        </p>
+
+        <span class="program-date">
+          Quarterly
+        </span>
+
+      </div>
+
+
+      <!-- MID YEAR -->
+      <div class="program-card">
+
+        <div class="program-number">Mid-Year Program</div>
+
+        <h3>7:7:7</h3>
+
+        <p>
+          Seven powerful days of seeking God, prayer,
+          worship and spiritual encounters.
+        </p>
+
+        <span class="program-date">
+          1st – 7th July
+        </span>
+
+      </div>
+
+
+      <!-- END YEAR -->
+      <div class="program-card">
+
+        <div class="program-number">End of the Year</div>
+
+        <h3>Church Anniversary & Thanksgiving</h3>
+
+        <p>
+          A special season of celebration, thanksgiving
+          and appreciation for God's faithfulness throughout
+          the year.
+        </p>
+
+        <span class="program-date">
+          1st Week of November
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- QUARTERLY FEATURE -->
+<section class="quarterly">
+
+  <div class="quarterly-box">
+
+    <div class="section-label">Quarterly Program</div>
+
+    <h2>POWER JAM POWERS</h2>
+
+    <p>
+      Experience an atmosphere of intense prayer, worship,
+      teaching and spiritual empowerment. Watch this space
+      for the next confirmed date and program details.
+    </p>
+
+    <div class="quarterly-badge">
+      POWER • PRAYER • PRESENCE
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SCRIPTURE -->
+<section class="scripture">
+
+  <blockquote>
+    “For where two or three are gathered together in my name,
+    there am I in the midst of them.”
+  </blockquote>
+
+  <cite>Matthew 18:20</cite>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+  <div class="section-label">Come & Encounter God</div>
+
+  <h2>There Is a Place for You</h2>
+
+  <p>
+    Join us at God of Now Now International Ministry.
+    Come with expectation and experience the God of Now.
+  </p>
+
+  <a href="contact.html" class="btn">
+    CONTACT US
+  </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="footer-grid">
+
+    <div class="footer-brand">
+
+      <h3>God of Now Now</h3>
+
+      <p>
+        God of Now Now International Ministry.
+        Experience the God of Now through His Word,
+        His presence and His power.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h4>Quick Links</h4>
+
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="ministries.html">Ministries</a>
+      <a href="sermons.html">Sermons</a>
+
+    </div>
+
+
+    <div>
+
+      <h4>Explore</h4>
+
+      <a href="gallery.html">Gallery</a>
+      <a href="news.html">News</a>
+      <a href="prayer.html">Prayer Request</a>
+      <a href="give.html">Give</a>
+
+    </div>
+
+
+    <div>
+
+      <h4>Contact Us</h4>
+
+      <div class="footer-contact">
+
+        7 Ishaga Street, Agbelekale,
+        Ekoro-Command Road,
+        Abulegba, Lagos, Nigeria.
+
+        <br><br>
+
+        Office:
+        +234 813 910 2599
+
+        <br>
+
+        Private:
+        +234 815 099 0331
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="copyright">
+
+    © 2026 God of Now Now International Ministry.
+    All Rights Reserved.
+
+  </div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+<a
+  href="https://wa.me/2348139102599"
+  class="whatsapp"
+  target="_blank"
+  aria-label="Chat on WhatsApp"
+>
+  ☎
+</a>
+
+
+<script>
+
+function toggleMenu() {
+
+  document
+    .getElementById("mainNav")
+    .classList
+    .toggle("show");
+
+}
+
+</script>
+
+</body>
+</html>
