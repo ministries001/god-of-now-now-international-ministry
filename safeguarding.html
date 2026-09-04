@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Safeguarding | God of Now Now International Ministry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    color:#222;
+    background:#fff;
+    line-height:1.8;
+}
+
+:root{
+    --gold:#b58b28;
+    --light-gold:#e5c15b;
+    --black:#111;
+    --dark:#080808;
+    --cream:#f5f1e8;
+    --gray:#666;
+    --danger:#8b1e1e;
+    --soft-red:#fff1f1;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#111;
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.navbar{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#fff;
+    text-decoration:none;
+    font-size:19px;
+    font-weight:800;
+    line-height:1.2;
+    max-width:290px;
+}
+
+.logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+    margin-top:5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:var(--light-gold);
+}
+
+.menu-toggle{
+    display:none;
+    color:#fff;
+    font-size:29px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:410px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.76),rgba(0,0,0,.84)),
+    url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(42px,7vw,70px);
+}
+
+.gold-line{
+    width:80px;
+    height:4px;
+    background:var(--light-gold);
+    margin:22px auto;
+}
+
+.hero p{
+    max-width:780px;
+    margin:auto;
+    color:#eee;
+    font-size:16px;
+}
+
+/* ================= INTRO ================= */
+
+.intro{
+    padding:80px 0 50px;
+    background:#fff;
+}
+
+.intro-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.intro h2{
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    margin-bottom:18px;
+}
+
+.intro p{
+    color:var(--gray);
+    font-size:15px;
+}
+
+/* ================= SAFEGUARDING CARDS ================= */
+
+.safeguarding{
+    padding:35px 0 80px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #e8e8e8;
+    border-radius:8px;
+    padding:32px 25px;
+    box-shadow:0 6px 25px rgba(0,0,0,.05);
+}
+
+.card-icon{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:var(--cream);
+    color:var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    margin-bottom:18px;
+}
+
+.card h3{
+    font-family:'Playfair Display',serif;
+    font-size:23px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:var(--gray);
+    font-size:13px;
+}
+
+/* ================= POLICY ================= */
+
+.policy{
+    background:var(--cream);
+    padding:80px 0;
+}
+
+.policy-container{
+    max-width:950px;
+    margin:auto;
+}
+
+.policy-block{
+    margin-bottom:42px;
+}
+
+.policy-block h2{
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    margin-bottom:13px;
+    color:#111;
+}
+
+.policy-block p{
+    color:#555;
+    font-size:14px;
+    margin-bottom:13px;
+}
+
+.policy-block ul{
+    padding-left:25px;
+    color:#555;
+    font-size:14px;
+}
+
+.policy-block li{
+    margin-bottom:8px;
+}
+
+/* ================= SAFETY NOTICE ================= */
+
+.safety-notice{
+    background:var(--soft-red);
+    border-left:5px solid var(--danger);
+    padding:25px;
+    margin:35px 0;
+    border-radius:5px;
+}
+
+.safety-notice h3{
+    color:var(--danger);
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.safety-notice p{
+    color:#555;
+    font-size:14px;
+}
+
+/* ================= REPORT BOX ================= */
+
+.report-section{
+    padding:80px 0;
+    background:#fff;
+}
+
+.report-box{
+    max-width:900px;
+    margin:auto;
+    background:#111;
+    color:#fff;
+    border-radius:10px;
+    padding:45px;
+    text-align:center;
+}
+
+.report-box h2{
+    font-family:'Playfair Display',serif;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.report-box p{
+    color:#ddd;
+    max-width:700px;
+    margin:0 auto 20px;
+    font-size:14px;
+}
+
+.report-box strong{
+    color:var(--light-gold);
+}
+
+.report-buttons{
+    margin-top:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:var(--gold);
+    color:#fff;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:700;
+    margin:5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:var(--light-gold);
+    color:#111;
+}
+
+.btn.white{
+    background:#fff;
+    color:#111;
+}
+
+.btn.white:hover{
+    background:var(--light-gold);
+}
+
+/* ================= CONTACT ================= */
+
+.contact-section{
+    background:var(--cream);
+    padding:75px 0;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.contact-card{
+    background:#fff;
+    padding:32px;
+    border-radius:8px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.contact-card h3{
+    font-family:'Playfair Display',serif;
+    font-size:25px;
+    margin-bottom:12px;
+}
+
+.contact-card p{
+    color:#666;
+    font-size:14px;
+}
+
+.contact-card a{
+    color:var(--gold);
+    text-decoration:none;
+    font-weight:700;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:var(--gold);
+    color:#fff;
+    text-align:center;
+    padding:75px 0;
+}
+
+.cta h2{
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.cta p{
+    max-width:720px;
+    margin:0 auto 25px;
+}
+
+.cta .btn{
+    background:#fff;
+    color:#111;
+}
+
+.cta .btn:hover{
+    background:#111;
+    color:#fff;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:var(--dark);
+    color:#ccc;
+    padding:65px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.4fr;
+    gap:40px;
+}
+
+.footer-col h3{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+.footer-col p{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col li{
+    margin-bottom:9px;
+}
+
+.footer-col a{
+    color:#bbb;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.footer-col a:hover{
+    color:var(--light-gold);
+}
+
+.footer-logo{
+    color:#fff;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.footer-logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+.copyright{
+    border-top:1px solid #292929;
+    margin-top:45px;
+    padding-top:22px;
+    text-align:center;
+    font-size:12px;
+    color:#888;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:24px;
+    z-index:999;
+    box-shadow:0 5px 18px rgba(0,0,0,.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .nav-links{
+        gap:10px;
+    }
+
+    .card-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:800px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:78px;
+        left:0;
+        width:100%;
+        background:#111;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:20px 5%;
+        display:none;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+        padding:7px 0;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+        min-height:350px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .intro h2{
+        font-size:33px;
+    }
+
+    .card-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .policy-block h2{
+        font-size:27px;
+    }
+
+    .report-box{
+        padding:32px 22px;
+    }
+
+    .report-box h2{
+        font-size:30px;
+    }
+
+    .cta h2{
+        font-size:33px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        width:100%;
+        max-width:290px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="index.html" class="logo">
+
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+
+<span>
+EXPERIENCE THE GOD OF NOW
+</span>
+
+</a>
+
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="leadership.html">Leadership</a></li>
+
+<li><a href="ministries.html">Ministries</a></li>
+
+<li><a href="sermons.html">Sermons</a></li>
+
+<li><a href="media.html">Media</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="news.html">News</a></li>
+
+<li><a href="activities.html">Activities</a></li>
+
+<li><a href="events.html">Events</a></li>
+
+<li><a href="prayer.html">Prayer</a></li>
+
+<li><a href="testimonies.html">Testimonies</a></li>
+
+<li><a href="faq.html">FAQ</a></li>
+
+<li><a href="give.html">Give</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<h1>Safeguarding</h1>
+
+<div class="gold-line"></div>
+
+<p>
+Protecting children, young people, vulnerable adults and
+everyone who worships, serves and participates in our ministry.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro">
+
+<div class="container">
+
+<div class="intro-content">
+
+<h2>
+A Safe Place to Worship
+</h2>
+
+<p>
+God of Now Now International Ministry is committed to creating
+a respectful, welcoming and safe environment where people can
+worship God, participate in ministry and grow in faith without
+fear of abuse, exploitation, harassment or inappropriate conduct.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CARDS ================= -->
+
+<section class="safeguarding">
+
+<div class="container">
+
+<div class="card-grid">
+
+
+<div class="card">
+
+<div class="card-icon">
+🛡️
+</div>
+
+<h3>
+Protection
+</h3>
+
+<p>
+We encourage practices that help protect children, young people,
+vulnerable adults, members, visitors and ministry workers.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">
+🤝
+</div>
+
+<h3>
+Respect
+</h3>
+
+<p>
+Every person should be treated with dignity, kindness, fairness
+and respect regardless of age or background.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">
+❤️
+</div>
+
+<h3>
+Care
+</h3>
+
+<p>
+We seek to respond responsibly to concerns and provide appropriate
+pastoral support while respecting confidentiality and safety.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= POLICY ================= -->
+
+<section class="policy">
+
+<div class="container policy-container">
+
+
+<div class="policy-block">
+
+<h2>
+1. Our Commitment
+</h2>
+
+<p>
+The safety and wellbeing of people who participate in the ministry
+are important to us. Church leaders, workers and volunteers are
+expected to conduct themselves responsibly and appropriately.
+</p>
+
+<p>
+We encourage a culture where concerns can be raised without
+intimidation or retaliation.
+</p>
+
+</div>
+
+
+<div class="policy-block">
+
+<h2>
+2. Children and Young People
+</h2>
+
+<p>
+Children and young people deserve particular care and protection.
+Adults serving in children or youth activities should maintain
+appropriate boundaries and follow responsible ministry practices.
+</p>
+
+<ul>
+
+<li>Children should be treated with dignity and respect.</li>
+
+<li>Adults should maintain appropriate physical and emotional boundaries.</li>
+
+<li>Concerns about a child's safety should be taken seriously.</li>
+
+<li>Parents and guardians should be kept appropriately informed about ministry activities.</li>
+
+</ul>
+
+</div>
+
+
+<div class="policy-block">
+
+<h2>
+3. Vulnerable Adults
+</h2>
+
+<p>
+People who may require additional support or protection should
+be treated with dignity, patience and respect.
+</p>
+
+<p>
+Ministry workers should avoid exploiting a person's vulnerability,
+dependence or trust.
+</p>
+
+</div>
+
+
+<div class="policy-block">
+
+<h2>
+4. Responsible Conduct
+</h2>
+
+<p>
+All ministry workers, leaders and volunteers are expected to act
+in a manner that protects the dignity and wellbeing of others.
+</p>
+
+<ul>
+
+<li>Do not abuse a position of trust or authority.</li>
+
+<li>Do not engage in threatening, humiliating or abusive behaviour.</li>
+
+<li>Do not exploit people financially, emotionally or spiritually.</li>
+
+<li>Maintain appropriate boundaries in pastoral relationships.</li>
+
+<li>Respect personal information and confidentiality.</li>
+
+<li>Report serious safeguarding concerns through appropriate channels.</li>
+
+</ul>
+
+</div>
+
+
+<div class="policy-block">
+
+<h2>
+5. Abuse and Exploitation
+</h2>
+
+<p>
+Safeguarding concerns may include physical abuse, sexual abuse,
+emotional or psychological abuse, neglect, exploitation,
+harassment, intimidation, financial exploitation or other forms
+of harmful behaviour.
+</p>
+
+<div class="safety-notice">
+
+<h3>
+If Someone Is in Immediate Danger
+</h3>
+
+<p>
+If you believe someone is in immediate danger, contact the
+appropriate emergency services or relevant authorities first.
+Do not put yourself or another person at additional risk.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="policy-block">
+
+<h2>
+6. Raising a Concern
+</h2>
+
+<p>
+Anyone who has a safeguarding concern involving a church activity,
+worker, volunteer, leader, member or visitor is encouraged to
+raise the concern promptly.
+</p>
+
+<p>
+Where possible, provide clear information about what happened,
+when it happened and who may be affected. Do not investigate
+serious allegations yourself.
+</p>
+
+</div>
+
+
+<div class="policy-block">
+
+<h2>
+7. Confidentiality
+</h2>
+
+<p>
+Safeguarding information should be handled carefully and shared
+only with people who need the information to respond appropriately.
+</p>
+
+<p>
+Confidentiality cannot always be guaranteed where disclosure is
+necessary to protect a person from serious harm or where reporting
+to an appropriate authority is required.
+</p>
+
+</div>
+
+
+<div class="policy-block">
+
+<h2>
+8. Online Safety
+</h2>
+
+<p>
+The same standards of respect and appropriate conduct apply to
+online ministry activities, social media communication, messaging,
+video calls and other digital interactions.
+</p>
+
+<ul>
+
+<li>Do not send inappropriate content to children or vulnerable people.</li>
+
+<li>Do not request unnecessary private information.</li>
+
+<li>Maintain appropriate communication boundaries.</li>
+
+<li>Be careful when sharing photographs or videos of others.</li>
+
+</ul>
+
+</div>
+
+
+<div class="policy-block">
+
+<h2>
+9. Photographs and Media
+</h2>
+
+<p>
+Church services and events may sometimes be photographed or
+recorded for ministry communication and documentation.
+</p>
+
+<p>
+Reasonable care should be taken when photographing or publishing
+images involving children and vulnerable people.
+</p>
+
+</div>
+
+
+<div class="policy-block">
+
+<h2>
+10. Volunteers and Ministry Workers
+</h2>
+
+<p>
+People serving in ministry should understand their responsibilities
+and conduct themselves in accordance with church leadership,
+applicable policies and relevant laws.
+</p>
+
+<p>
+Where appropriate, the ministry may introduce additional procedures
+for roles involving children, young people or vulnerable adults.
+</p>
+
+</div>
+
+
+<div class="policy-block">
+
+<h2>
+11. False or Malicious Reports
+</h2>
+
+<p>
+Safeguarding concerns should always be taken seriously. However,
+knowingly making a false allegation or deliberately providing
+misleading information can cause serious harm.
+</p>
+
+<p>
+Concerns should therefore be raised honestly and responsibly.
+</p>
+
+</div>
+
+
+<div class="policy-block">
+
+<h2>
+12. Cooperation With Authorities
+</h2>
+
+<p>
+Where a safeguarding matter involves conduct that may constitute
+a crime or serious risk of harm, the ministry may encourage or
+cooperate with appropriate authorities and professional services,
+in accordance with applicable law.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= REPORT ================= -->
+
+<section class="report-section">
+
+<div class="container">
+
+<div class="report-box">
+
+<h2>
+Need to Report a Concern?
+</h2>
+
+<p>
+If you have a safeguarding concern relating to the church,
+please contact the ministry using the official contact details.
+For immediate danger, contact the appropriate emergency service
+or authority.
+</p>
+
+<p>
+<strong>
+Please do not use social media comments to report sensitive
+safeguarding concerns.
+</strong>
+</p>
+
+<div class="report-buttons">
+
+<a href="contact.html" class="btn">
+Contact The Church
+</a>
+
+<a href="tel:+2348139102599" class="btn white">
+Call Office
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section">
+
+<div class="container">
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<h3>
+Church Address
+</h3>
+
+<p>
+
+<strong>
+God of Now Now International Ministry
+</strong>
+<br><br>
+
+7 Ishaga Street Agbelekale
+Ekoro-Command Road
+Abulegba
+Lagos, Nigeria.
+
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>
+Church Contact
+</h3>
+
+<p>
+
+<strong>
+Office Line:
+</strong>
+
+<br>
+
+<a href="tel:+2348139102599">
++2348139102599
+</a>
+
+<br><br>
+
+<strong>
+Private Line:
+</strong>
+
+<br>
+
+<a href="tel:+2348150990331">
++2348150990331
+</a>
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Everyone Is Welcome
+</h2>
+
+<p>
+Our desire is to provide an environment where people can worship,
+learn, serve and encounter God in a safe and respectful atmosphere.
+</p>
+
+<a href="contact.html" class="btn">
+Contact The Ministry
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div class="footer-col">
+
+<div class="footer-logo">
+
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+
+<span>
+EXPERIENCE THE GOD OF NOW
+</span>
+
+</div>
+
+<p>
+A ministry committed to helping people encounter God,
+grow in faith and discover their purpose.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>
+Quick Links
+</h3>
+
+<ul>
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+<li>
+<a href="leadership.html">Leadership</a>
+</li>
+
+<li>
+<a href="ministries.html">Ministries</a>
+</li>
+
+<li>
+<a href="sermons.html">Sermons</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>
+Explore
+</h3>
+
+<ul>
+
+<li>
+<a href="media.html">Media</a>
+</li>
+
+<li>
+<a href="gallery.html">Gallery</a>
+</li>
+
+<li>
+<a href="news.html">News</a>
+</li>
+
+<li>
+<a href="activities.html">Activities</a>
+</li>
+
+<li>
+<a href="events.html">Events</a>
+</li>
+
+<li>
+<a href="prayer.html">Prayer</a>
+</li>
+
+<li>
+<a href="testimonies.html">Testimonies</a>
+</li>
+
+<li>
+<a href="faq.html">FAQ</a>
+</li>
+
+<li>
+<a href="give.html">Give</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>
+Contact Us
+</h3>
+
+<p>
+
+7 Ishaga Street Agbelekale
+Ekoro-Command Road
+Abulegba Lagos Nigeria
+
+</p>
+
+<p>
+Office:
++2348139102599
+</p>
+
+<p>
+Private:
++2348150990331
+</p>
+
+<p>
+
+<a href="contact.html">
+Visit Contact Page →
+</a>
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 God of Now Now International Ministry.
+All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/2348139102599"
+target="_blank"
+aria-label="Contact us on WhatsApp">
+
+☎
+
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function toggleMenu(){
+
+document
+.querySelector(".nav-links")
+.classList
+.toggle("show");
+
+}
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+document
+.querySelector(".nav-links")
+.classList
+.remove("show");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
