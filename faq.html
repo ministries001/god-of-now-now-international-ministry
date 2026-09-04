@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ | God of Now Now International Ministry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    color:#222;
+    background:#fff;
+    line-height:1.7;
+}
+
+:root{
+    --gold:#b58b28;
+    --light-gold:#e5c15b;
+    --black:#111;
+    --dark:#080808;
+    --cream:#f5f1e8;
+    --gray:#666;
+    --white:#fff;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(17,17,17,.98);
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.navbar{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#fff;
+    text-decoration:none;
+    font-size:19px;
+    font-weight:800;
+    line-height:1.2;
+    max-width:290px;
+}
+
+.logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+    margin-top:5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:var(--light-gold);
+}
+
+.menu-toggle{
+    display:none;
+    color:#fff;
+    font-size:29px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:430px;
+    background:
+        linear-gradient(rgba(0,0,0,.73),rgba(0,0,0,.80)),
+        url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(45px,7vw,75px);
+}
+
+.gold-line{
+    width:80px;
+    height:4px;
+    background:var(--light-gold);
+    margin:22px auto;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#eee;
+    font-size:17px;
+}
+
+/* ================= FAQ ================= */
+
+.faq-section{
+    padding:85px 0;
+    background:#fff;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+}
+
+.section-title p{
+    max-width:720px;
+    margin:12px auto;
+    color:var(--gray);
+}
+
+.faq-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    border:1px solid #e5e5e5;
+    border-radius:7px;
+    margin-bottom:15px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 3px 15px rgba(0,0,0,.04);
+}
+
+.faq-question{
+    width:100%;
+    border:0;
+    background:#fff;
+    padding:22px 25px;
+    text-align:left;
+    font-family:'Montserrat',sans-serif;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    color:#222;
+}
+
+.faq-question:hover{
+    color:var(--gold);
+}
+
+.faq-icon{
+    min-width:28px;
+    height:28px;
+    border-radius:50%;
+    background:var(--cream);
+    color:var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:19px;
+    transition:.3s;
+}
+
+.faq-item.open .faq-icon{
+    transform:rotate(45deg);
+    background:var(--gold);
+    color:#fff;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+.faq-answer-inner{
+    padding:0 25px 23px;
+    color:var(--gray);
+    font-size:14px;
+}
+
+/* ================= QUICK INFO ================= */
+
+.info-section{
+    background:var(--cream);
+    padding:80px 0;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.info-card{
+    background:#fff;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:8px;
+    box-shadow:0 7px 25px rgba(0,0,0,.06);
+}
+
+.info-icon{
+    width:60px;
+    height:60px;
+    margin:0 auto 17px;
+    border-radius:50%;
+    background:var(--cream);
+    color:var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+}
+
+.info-card h3{
+    font-family:'Playfair Display',serif;
+    font-size:23px;
+    margin-bottom:10px;
+}
+
+.info-card p{
+    color:var(--gray);
+    font-size:13px;
+}
+
+.info-card a{
+    color:var(--gold);
+    text-decoration:none;
+    font-weight:700;
+}
+
+/* ================= CONTACT CTA ================= */
+
+.cta{
+    background:var(--gold);
+    color:#fff;
+    text-align:center;
+    padding:80px 0;
+}
+
+.cta h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    max-width:720px;
+    margin:0 auto 28px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#fff;
+    color:#111;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#111;
+    color:#fff;
+}
+
+.btn.dark{
+    background:#111;
+    color:#fff;
+    margin-left:8px;
+}
+
+.btn.dark:hover{
+    background:#fff;
+    color:#111;
+}
+
+/* ================= SCRIPTURE ================= */
+
+.scripture{
+    background:
+        linear-gradient(rgba(8,8,8,.90),rgba(8,8,8,.90)),
+        url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    color:#fff;
+    text-align:center;
+    padding:80px 0;
+}
+
+.scripture blockquote{
+    max-width:850px;
+    margin:auto;
+    font-family:'Playfair Display',serif;
+    font-size:31px;
+    line-height:1.5;
+}
+
+.scripture cite{
+    display:block;
+    margin-top:20px;
+    color:var(--light-gold);
+    font-family:'Montserrat',sans-serif;
+    font-size:14px;
+    font-style:normal;
+    font-weight:700;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:var(--dark);
+    color:#ccc;
+    padding:65px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.4fr;
+    gap:40px;
+}
+
+.footer-col h3{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+.footer-col p{
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col li{
+    margin-bottom:9px;
+}
+
+.footer-col a{
+    color:#bbb;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.footer-col a:hover{
+    color:var(--light-gold);
+}
+
+.footer-logo{
+    color:#fff;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.footer-logo span{
+    display:block;
+    color:var(--light-gold);
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+.copyright{
+    border-top:1px solid #292929;
+    margin-top:45px;
+    padding-top:22px;
+    text-align:center;
+    font-size:12px;
+    color:#888;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:24px;
+    z-index:999;
+    box-shadow:0 5px 18px rgba(0,0,0,.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .nav-links{
+        gap:10px;
+    }
+
+    .info-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:800px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:78px;
+        left:0;
+        width:100%;
+        background:#111;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:20px 5%;
+        display:none;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+        padding:7px 0;
+    }
+}
+
+@media(max-width:600px){
+
+    .hero{
+        min-height:390px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .section-title h2,
+    .cta h2{
+        font-size:34px;
+    }
+
+    .faq-question{
+        padding:19px;
+        font-size:14px;
+    }
+
+    .faq-answer-inner{
+        padding:0 19px 20px;
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .scripture blockquote{
+        font-size:24px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+        max-width:280px;
+        margin:10px auto !important;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="index.html" class="logo">
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+<span>EXPERIENCE THE GOD OF NOW</span>
+</a>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="leadership.html">Leadership</a></li>
+<li><a href="ministries.html">Ministries</a></li>
+<li><a href="sermons.html">Sermons</a></li>
+<li><a href="media.html">Media</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="prayer.html">Prayer</a></li>
+<li><a href="testimonies.html">Testimonies</a></li>
+<li><a href="faq.html" class="active">FAQ</a></li>
+<li><a href="give.html">Give</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<h1>Frequently Asked Questions</h1>
+
+<div class="gold-line"></div>
+
+<p>
+Find answers to some of the common questions about
+God of Now Now International Ministry.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>How Can We Help?</h2>
+
+<p>
+Here are answers to some frequently asked questions.
+If you need more information, please contact the church.
+</p>
+
+</div>
+
+
+<div class="faq-container">
+
+
+<!-- FAQ 1 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Where is God of Now Now International Ministry located?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+The church is located at
+<strong>
+7 Ishaga Street, Agbelekale, Ekoro-Command Road,
+Abulegba, Lagos, Nigeria.
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FAQ 2 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>What are the church's weekly activities?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+<strong>Tuesdays:</strong> 9:00 AM – 4:00 PM —
+One on One with The Prophet.<br><br>
+
+<strong>Thursdays:</strong> 9:00 AM – 1:00 PM —
+Deliverance and Healing Service.<br><br>
+
+<strong>First Fridays:</strong> 10:00 PM —
+Night of Encounter Vigil.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FAQ 3 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>What is the Night of Encounter?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+The <strong>Night of Encounter</strong> is the church's
+monthly vigil held on the first Friday of the month at
+<strong>10:00 PM</strong>. It is a time of prayer,
+worship and seeking God's presence.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FAQ 4 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>What is the 7:7:7 programme?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+<strong>7:7:7</strong> is the ministry's mid-year programme
+scheduled for <strong>1st – 7th July</strong>.
+It is a special period dedicated to prayer, worship and
+spiritual encounter.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FAQ 5 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Does the church have special programmes?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+Yes. The ministry has quarterly programmes including
+<strong>Power Jam Powers</strong>, a mid-year
+<strong>7:7:7</strong> programme, and the annual
+<strong>Church Anniversary / Thanksgiving</strong> held
+during the first week of November.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FAQ 6 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Can I submit a prayer request?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+Yes. You can submit a prayer request through the
+<strong>Prayer Request</strong> page on this website.
+The church prayer team can stand with you in prayer.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FAQ 7 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Can I share my testimony?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+Yes. We welcome testimonies of God's faithfulness.
+Visit the <strong>Testimonies</strong> page to submit
+your testimony for review.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FAQ 8 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>How can I contact the church?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+You can contact the church through the following numbers:<br><br>
+
+<strong>Office Line:</strong> +2348139102599<br>
+
+<strong>Private Line:</strong> +2348150990331
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FAQ 9 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Can I support the ministry financially?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+Yes. You can support the work of the ministry through the
+<strong>Give</strong> page on this website, where the church's
+official giving information is provided.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FAQ 10 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>Can I visit the church if I am a first-time visitor?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+Absolutely. Everyone is welcome to worship with us.
+We encourage first-time visitors to contact the church
+if they need directions or additional information before
+coming.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FAQ 11 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>How can I watch or listen to church messages?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+Visit the <strong>Media</strong> or
+<strong>Sermons</strong> section of the website to access
+available messages, teachings and other media content.
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FAQ 12 -->
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+<span>How can I find the church's latest events?</span>
+
+<span class="faq-icon">+</span>
+
+</button>
+
+<div class="faq-answer">
+
+<div class="faq-answer-inner">
+
+Visit the <strong>Events</strong> and
+<strong>Activities</strong> pages for information about
+upcoming programmes and regular church activities.
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= QUICK INFO ================= -->
+
+<section class="info-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Need More Information?</h2>
+
+<p>
+Our team will be happy to help you.
+</p>
+
+</div>
+
+
+<div class="info-grid">
+
+
+<div class="info-card">
+
+<div class="info-icon">
+📍
+</div>
+
+<h3>Visit Us</h3>
+
+<p>
+7 Ishaga Street Agbelekale,
+Ekoro-Command Road,
+Abulegba, Lagos, Nigeria.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="info-icon">
+☎
+</div>
+
+<h3>Call Us</h3>
+
+<p>
+Office Line:<br>
+<a href="tel:+2348139102599">
++2348139102599
+</a>
+<br><br>
+
+Private Line:<br>
+<a href="tel:+2348150990331">
++2348150990331
+</a>
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="info-icon">
+🙏
+</div>
+
+<h3>Prayer</h3>
+
+<p>
+Do you need prayer or spiritual support?
+Send your prayer request online.
+</p>
+
+<br>
+
+<a href="prayer.html">
+Send Prayer Request →
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SCRIPTURE ================= -->
+
+<section class="scripture">
+
+<div class="container">
+
+<blockquote>
+
+“Ask, and it shall be given you; seek,
+and ye shall find; knock, and it shall be opened unto you.”
+
+<cite>
+— Matthew 7:7
+</cite>
+
+</blockquote>
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+We Are Here For You
+</h2>
+
+<p>
+If your question was not answered here, please reach out to us.
+We will be glad to assist you.
+</p>
+
+<a href="contact.html" class="btn">
+Contact The Church
+</a>
+
+<a href="prayer.html" class="btn dark">
+Prayer Request
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div class="footer-col">
+
+<div class="footer-logo">
+
+GOD OF NOW NOW INTERNATIONAL MINISTRY
+
+<span>
+EXPERIENCE THE GOD OF NOW
+</span>
+
+</div>
+
+<p>
+A ministry committed to helping people encounter God,
+grow in faith and discover their purpose.
+</p>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="leadership.html">Leadership</a></li>
+<li><a href="ministries.html">Ministries</a></li>
+<li><a href="sermons.html">Sermons</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Explore</h3>
+
+<ul>
+
+<li><a href="media.html">Media</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="activities.html">Activities</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="prayer.html">Prayer</a></li>
+<li><a href="testimonies.html">Testimonies</a></li>
+<li><a href="give.html">Give</a></li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col">
+
+<h3>Contact Us</h3>
+
+<p>
+7 Ishaga Street Agbelekale Ekoro-Command Road
+Abulegba Lagos Nigeria
+</p>
+
+<p>
+Office: +2348139102599
+</p>
+
+<p>
+Private: +2348150990331
+</p>
+
+<p>
+<a href="contact.html">
+Visit Contact Page →
+</a>
+</p>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 God of Now Now International Ministry.
+All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+
+<a
+class="whatsapp"
+href="https://wa.me/2348139102599"
+target="_blank"
+aria-label="WhatsApp">
+
+☎
+
+</a>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+function toggleMenu(){
+
+document
+.querySelector(".nav-links")
+.classList
+.toggle("show");
+
+}
+
+
+/* FAQ ACCORDION */
+
+const faqQuestions =
+document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(function(question){
+
+question.addEventListener("click",function(){
+
+const item =
+question.parentElement;
+
+const answer =
+item.querySelector(".faq-answer");
+
+
+/* Close other FAQs */
+
+document
+.querySelectorAll(".faq-item")
+.forEach(function(otherItem){
+
+if(otherItem !== item){
+
+otherItem.classList.remove("open");
+
+otherItem
+.querySelector(".faq-answer")
+.style.maxHeight = null;
+
+}
+
+});
+
+
+/* Toggle selected FAQ */
+
+item.classList.toggle("open");
+
+if(item.classList.contains("open")){
+
+answer.style.maxHeight =
+answer.scrollHeight + "px";
+
+}else{
+
+answer.style.maxHeight = null;
+
+}
+
+});
+
+});
+
+
+/* CLOSE MOBILE MENU */
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+document
+.querySelector(".nav-links")
+.classList
+.remove("show");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
