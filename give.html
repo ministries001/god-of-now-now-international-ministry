@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Give | God of Now Now International Ministry</title>
+
+    <meta name="description" content="Support the work of God of Now Now International Ministry through your giving, tithes, offerings and special gifts.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #b58b28;
+            --light-gold: #e5c15b;
+            --black: #111111;
+            --dark: #080808;
+            --cream: #f5f1e8;
+            --white: #ffffff;
+            --gray: #666666;
+            --light-gray: #f7f7f7;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--black);
+            background: var(--white);
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* HEADER */
+        header {
+            background: var(--black);
+            color: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,.2);
+        }
+
+        .nav-container {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-gold);
+            font-weight: 800;
+            font-size: 16px;
+        }
+
+        .logo-text {
+            line-height: 1.1;
+        }
+
+        .logo-text strong {
+            display: block;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .logo-text span {
+            display: block;
+            color: var(--light-gold);
+            font-size: 10px;
+            margin-top: 4px;
+            letter-spacing: 1.5px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 26px;
+        }
+
+        nav a {
+            font-size: 13px;
+            font-weight: 600;
+            transition: .3s;
+            position: relative;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--light-gold);
+        }
+
+        nav a.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -8px;
+            height: 2px;
+            background: var(--gold);
+        }
+
+        .nav-give {
+            background: var(--gold);
+            padding: 10px 18px;
+            border-radius: 30px;
+            color: var(--white) !important;
+        }
+
+        .nav-give:hover {
+            background: var(--light-gold);
+            color: var(--black) !important;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* HERO */
+        .page-hero {
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background:
+                linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.68)),
+                url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+            color: var(--white);
+        }
+
+        .hero-content {
+            max-width: 760px;
+        }
+
+        .hero-content .small-title {
+            color: var(--light-gold);
+            font-weight: 700;
+            letter-spacing: 3px;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(48px, 7vw, 82px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            max-width: 650px;
+            font-size: 17px;
+            color: #eee;
+        }
+
+        /* SECTION */
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title .eyebrow {
+            color: var(--gold);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .section-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(35px, 5vw, 52px);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: auto;
+            color: var(--gray);
+        }
+
+        /* INTRO */
+        .intro {
+            background: var(--white);
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .intro-image {
+            height: 450px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .intro-text h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .intro-text h2 span {
+            color: var(--gold);
+        }
+
+        .intro-text p {
+            color: var(--gray);
+            margin-bottom: 18px;
+        }
+
+        .gold-line {
+            width: 70px;
+            height: 4px;
+            background: var(--gold);
+            margin: 20px 0;
+        }
+
+        /* GIVING OPTIONS */
+        .giving-options {
+            background: var(--cream);
+        }
+
+        .giving-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .giving-card {
+            background: var(--white);
+            padding: 38px 30px;
+            border-radius: 8px;
+            text-align: center;
+            border-bottom: 4px solid transparent;
+            transition: .3s;
+            box-shadow: 0 8px 25px rgba(0,0,0,.06);
+        }
+
+        .giving-card:hover {
+            transform: translateY(-8px);
+            border-bottom-color: var(--gold);
+        }
+
+        .giving-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            background: var(--cream);
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        .giving-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+
+        .giving-card p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        /* BANK ACCOUNTS */
+        .accounts {
+            background: var(--white);
+        }
+
+        .accounts-wrapper {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .accounts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+        }
+
+        .account-card {
+            background: var(--black);
+            color: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,.12);
+        }
+
+        .account-card::before {
+            content: "";
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 1px solid rgba(229,193,91,.25);
+            right: -40px;
+            top: -40px;
+        }
+
+        .account-card::after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 1px solid rgba(229,193,91,.18);
+            right: 15px;
+            bottom: -35px;
+        }
+
+        .bank-name {
+            color: var(--light-gold);
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .account-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .account-detail {
+            border-top: 1px solid rgba(255,255,255,.12);
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+
+        .account-detail span {
+            display: block;
+            color: #aaa;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .account-detail strong {
+            font-size: 20px;
+            color: var(--white);
+            letter-spacing: 1px;
+        }
+
+        .account-number {
+            font-size: 30px !important;
+            color: var(--light-gold) !important;
+        }
+
+        .important-note {
+            margin-top: 30px;
+            background: var(--cream);
+            border-left: 4px solid var(--gold);
+            padding: 22px 25px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        /* SCRIPTURE */
+        .scripture {
+            background:
+                linear-gradient(rgba(0,0,0,.83), rgba(0,0,0,.83)),
+                url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .scripture-content {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .scripture-mark {
+            font-family: Georgia, serif;
+            font-size: 80px;
+            color: var(--light-gold);
+            line-height: .7;
+            margin-bottom: 30px;
+        }
+
+        .scripture blockquote {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(27px, 4vw, 43px);
+            line-height: 1.4;
+            margin-bottom: 25px;
+        }
+
+        .scripture cite {
+            color: var(--light-gold);
+            font-style: normal;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        /* FAQ */
+        .faq {
+            background: var(--light-gray);
+        }
+
+        .faq-list {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            padding: 25px 30px;
+            border-radius: 6px;
+        }
+
+        .faq-item h3 {
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .faq-item p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        /* CTA */
+        .cta {
+            background: var(--gold);
+            color: var(--white);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(35px, 5vw, 55px);
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 650px;
+            margin: 0 auto 28px;
+            color: #fff;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .btn-dark {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .btn-dark:hover {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        .btn-white:hover {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--dark);
+            color: #ccc;
+            padding: 70px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 45px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(255,255,255,.1);
+        }
+
+        .footer-brand h3 {
+            color: var(--white);
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .footer-brand .tagline {
+            color: var(--light-gold);
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .footer-brand p {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #999;
+        }
+
+        footer h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 10px;
+        }
+
+        footer li a {
+            color: #999;
+            font-size: 13px;
+            transition: .3s;
+        }
+
+        footer li a:hover {
+            color: var(--light-gold);
+        }
+
+        .footer-bottom {
+            padding-top: 25px;
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+        }
+
+        /* WHATSAPP */
+        .whatsapp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 27px;
+            z-index: 999;
+            box-shadow: 0 5px 20px rgba(0,0,0,.25);
+            transition: .3s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .giving-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-image {
+                height: 350px;
+            }
+
+            .accounts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .nav-container {
+                min-height: 70px;
+            }
+
+            .menu-toggle {
+                display: block;
+                color: var(--white);
+            }
+
+            nav {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--black);
+                display: none;
+                padding: 20px 5%;
+            }
+
+            nav.show {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+            }
+
+            nav a.active::after {
+                display: none;
+            }
+
+            .nav-give {
+                display: inline-block;
+            }
+
+            .page-hero {
+                min-height: 400px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .intro-text h2 {
+                font-size: 35px;
+            }
+
+            .account-card {
+                padding: 30px 24px;
+            }
+
+            .account-number {
+                font-size: 25px !important;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+        }
+
+        @media (max-width: 400px) {
+
+            .logo-text strong {
+                font-size: 11px;
+            }
+
+            .logo-text span {
+                font-size: 8px;
+            }
+
+            .logo-icon {
+                width: 36px;
+                height: 36px;
+            }
+
+            .hero-content h1 {
+                font-size: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <div class="logo-icon">GN</div>
+
+                <div class="logo-text">
+                    <strong>GOD OF NOW NOW</strong>
+                    <span>INTERNATIONAL MINISTRY</span>
+                </div>
+            </a>
+
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="leadership.html">Leadership</a></li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="sermons.html">Sermons</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="prayer.html">Prayer</a></li>
+                    <li><a href="give.html" class="active nav-give">Give</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="page-hero">
+
+        <div class="container">
+            <div class="hero-content">
+
+                <div class="small-title">
+                    Give • Support • Impact
+                </div>
+
+                <h1>Give</h1>
+
+                <p>
+                    Your generosity helps us advance the Gospel, support people,
+                    strengthen families and make a lasting difference in our
+                    communities.
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="intro">
+
+        <div class="container">
+
+            <div class="intro-grid">
+
+                <div class="intro-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=85"
+                        alt="Church worship">
+                </div>
+
+                <div class="intro-text">
+
+                    <div class="gold-line"></div>
+
+                    <h2>
+                        Your Giving Makes an <span>Impact</span>
+                    </h2>
+
+                    <p>
+                        Giving is an important part of our worship and our commitment
+                        to the work of God. Through your generosity, we are able to
+                        support ministry activities, outreach programmes, community
+                        projects and the preaching of the Gospel.
+                    </p>
+
+                    <p>
+                        Every gift matters. Whether large or small, your giving
+                        contributes to the advancement of God's work and helps us
+                        reach more lives with hope, faith and love.
+                    </p>
+
+                    <a href="#bank-accounts" class="btn btn-dark">
+                        Give Through Bank Transfer
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GIVING OPTIONS -->
+    <section class="giving-options">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div class="eyebrow">Ways To Give</div>
+
+                <h2>Give With A Willing Heart</h2>
+
+                <p>
+                    There are different ways you can support the work of God
+                    through your generosity.
+                </p>
+
+            </div>
+
+
+            <div class="giving-grid">
+
+                <div class="giving-card">
+
+                    <div class="giving-icon">
+                        ₦
+                    </div>
+
+                    <h3>Tithe</h3>
+
+                    <p>
+                        Honour God with your tithe and remain committed to
+                        supporting the work of His Kingdom.
+                    </p>
+
+                </div>
+
+
+                <div class="giving-card">
+
+                    <div class="giving-icon">
+                        ♥
+                    </div>
+
+                    <h3>Offering</h3>
+
+                    <p>
+                        Give freely and cheerfully as an expression of your
+                        gratitude and worship to God.
+                    </p>
+
+                </div>
+
+
+                <div class="giving-card">
+
+                    <div class="giving-icon">
+                        ✦
+                    </div>
+
+                    <h3>Special Giving</h3>
+
+                    <p>
+                        Support special projects, outreaches, missions and
+                        other ministry initiatives.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BANK ACCOUNTS -->
+    <section class="accounts" id="bank-accounts">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div class="eyebrow">Church Account Details</div>
+
+                <h2>Give Through Bank Transfer</h2>
+
+                <p>
+                    You can support God of Now Now International Ministry
+                    through any of the official church bank accounts below.
+                </p>
+
+            </div>
+
+
+            <div class="accounts-wrapper">
+
+                <div class="accounts-grid">
+
+                    <!-- WEMA BANK -->
+                    <div class="account-card">
+
+                        <div class="bank-name">
+                            Wema Bank
+                        </div>
+
+                        <h3>
+                            God of Now International Ministry
+                        </h3>
+
+                        <div class="account-detail">
+
+                            <span>Account Name</span>
+
+                            <strong>
+                                God of Now International Ministry
+                            </strong>
+
+                        </div>
+
+                        <div class="account-detail">
+
+                            <span>Account Number</span>
+
+                            <strong class="account-number">
+                                0122802618
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- UNITY BANK -->
+                    <div class="account-card">
+
+                        <div class="bank-name">
+                            Unity Bank
+                        </div>
+
+                        <h3>
+                            God of Now International Ministry
+                        </h3>
+
+                        <div class="account-detail">
+
+                            <span>Account Name</span>
+
+                            <strong>
+                                God of Now International Ministry
+                            </strong>
+
+                        </div>
+
+                        <div class="account-detail">
+
+                            <span>Account Number</span>
+
+                            <strong class="account-number">
+                                0043788853
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="important-note">
+
+                    <strong>Important:</strong>
+                    Please confirm the account name and account number carefully
+                    before making your transfer. These are the official church
+                    account details provided for giving.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCRIPTURE -->
+    <section class="scripture">
+
+        <div class="container">
+
+            <div class="scripture-content">
+
+                <div class="scripture-mark">“</div>
+
+                <blockquote>
+                    It is more blessed to give than to receive.
+                </blockquote>
+
+                <cite>
+                    ACTS 20:35
+                </cite>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="faq">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div class="eyebrow">Giving Questions</div>
+
+                <h2>Frequently Asked Questions</h2>
+
+                <p>
+                    A few helpful answers about giving to the ministry.
+                </p>
+
+            </div>
+
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+
+                    <h3>
+                        Can I give through bank transfer?
+                    </h3>
+
+                    <p>
+                        Yes. You can make your tithe, offering or special gift
+                        through any of the official church bank accounts listed
+                        on this page.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <h3>
+                        What can my giving support?
+                    </h3>
+
+                    <p>
+                        Your giving can support the ministry's Gospel work,
+                        outreach activities, missions, community support,
+                        church programmes and other ministry needs.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <h3>
+                        Does every amount make a difference?
+                    </h3>
+
+                    <p>
+                        Yes. Every sincere gift helps contribute to the work
+                        of the ministry. Give according to your ability and
+                        with a willing heart.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <h3>
+                        How can I contact the church about my giving?
+                    </h3>
+
+                    <p>
+                        You can use the Contact page to reach the ministry
+                        directly for questions or further information.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <div class="container">
+
+            <h2>
+                Thank You For Supporting God's Work
+            </h2>
+
+            <p>
+                We appreciate your generosity, prayers and continued support.
+                Together, we can make an impact and help more people experience
+                the God of Now.
+            </p>
+
+            <a href="contact.html" class="btn btn-dark">
+                Contact The Ministry
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <h3>
+                        God of Now Now International Ministry
+                    </h3>
+
+                    <div class="tagline">
+                        Experience the God of Now
+                    </div>
+
+                    <p>
+                        A Christ-centered ministry committed to spreading the
+                        Gospel, building lives, strengthening families and
+                        helping people experience the power and presence of God.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Ministry</h4>
+
+                    <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="prayer.html">Prayer Request</a></li>
+                        <li><a href="give.html">Give</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Contact</h4>
+
+                    <ul>
+                        <li>
+                            <a href="contact.html">
+                                Your Church Location
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tel:+2340000000000">
+                                +234 XXX XXX XXXX
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:info@godofnownowministry.org">
+                                info@godofnownowministry.org
+                            </a>
+                        </li>
+
+                        <li>
+                            Sunday Worship: 8:00 AM
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                © 2026 God of Now Now International Ministry.
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- WHATSAPP -->
+    <a
+        href="https://wa.me/2340000000000"
+        class="whatsapp"
+        target="_blank"
+        aria-label="Contact us on WhatsApp">
+        ☎
+    </a>
+
+
+    <script>
+
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("show");
+        }
+
+        document.querySelectorAll("#mainNav a").forEach(function(link) {
+
+            link.addEventListener("click", function() {
+                document.getElementById("mainNav").classList.remove("show");
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
