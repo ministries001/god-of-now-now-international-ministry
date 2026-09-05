@@ -126,6 +126,11 @@
       color: #b58b28;
     }
 
+    /* ACTIVE GALLERY LINK */
+    .nav-links a.gallery-link {
+      color: #b58b28;
+    }
+
     .give-btn {
       background: #b58b28 !important;
       color: white !important;
@@ -794,16 +799,45 @@
         </div>
       </a>
 
-      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
+        ☰
+      </button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#programmes">Ministries</a></li>
-        <li><a href="#sermons">Sermons</a></li>
-        <li><a href="#prayer">Prayer</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#give" class="give-btn">Give</a></li>
+
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#programmes">Ministries</a>
+        </li>
+
+        <li>
+          <a href="#sermons">Sermons</a>
+        </li>
+
+        <!-- GALLERY PAGE -->
+        <li>
+          <a href="gallery.html">Gallery</a>
+        </li>
+
+        <li>
+          <a href="#prayer">Prayer</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+        <li>
+          <a href="#give" class="give-btn">Give</a>
+        </li>
+
       </ul>
 
     </nav>
@@ -830,6 +864,7 @@
       </p>
 
       <div class="hero-buttons">
+
         <a href="#about" class="btn btn-gold">
           LEARN MORE
         </a>
@@ -837,6 +872,7 @@
         <a href="#sermons" class="btn btn-light">
           WATCH SERMONS
         </a>
+
       </div>
 
     </div>
@@ -853,7 +889,8 @@
 
         <img
           src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1000&q=85"
-          alt="Church Worship">
+          alt="Church Worship"
+        >
 
         <div class="image-badge">
           A Place of Encounter
@@ -900,37 +937,70 @@
   <section class="service-strip">
 
     <div class="heading-center">
-      <div class="section-label">Come Worship With Us</div>
-      <h2 class="section-title">Our Weekly Services</h2>
+
+      <div class="section-label">
+        Come Worship With Us
+      </div>
+
+      <h2 class="section-title">
+        Our Weekly Services
+      </h2>
+
     </div>
 
     <div class="service-grid">
 
       <div class="service-card">
-        <div class="service-icon">⛪</div>
-        <h3>Sunday Worship</h3>
+
+        <div class="service-icon">
+          ⛪
+        </div>
+
+        <h3>
+          Sunday Worship
+        </h3>
+
         <p>
           Every Sunday<br>
           8:00 AM – 11:00 AM
         </p>
+
       </div>
 
+
       <div class="service-card">
-        <div class="service-icon">🙏</div>
-        <h3>Tuesday Prayer</h3>
+
+        <div class="service-icon">
+          🙏
+        </div>
+
+        <h3>
+          Tuesday Prayer
+        </h3>
+
         <p>
           Every Tuesday<br>
           5:00 PM – 7:00 PM
         </p>
+
       </div>
 
+
       <div class="service-card">
-        <div class="service-icon">📖</div>
-        <h3>Bible Study</h3>
+
+        <div class="service-icon">
+          📖
+        </div>
+
+        <h3>
+          Bible Study
+        </h3>
+
         <p>
           Every Thursday<br>
           5:00 PM – 7:00 PM
         </p>
+
       </div>
 
     </div>
@@ -1001,11 +1071,14 @@
         <img
           class="programme-img"
           src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?auto=format&fit=crop&w=900&q=80"
-          alt="Prayer Ministry">
+          alt="Prayer Ministry"
+        >
 
         <div class="programme-content">
 
-          <h3>Prayer Ministry</h3>
+          <h3>
+            Prayer Ministry
+          </h3>
 
           <p>
             Building a strong prayer community through
@@ -1023,11 +1096,14 @@
         <img
           class="programme-img"
           src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=900&q=80"
-          alt="Bible Study">
+          alt="Bible Study"
+        >
 
         <div class="programme-content">
 
-          <h3>Word & Discipleship</h3>
+          <h3>
+            Word & Discipleship
+          </h3>
 
           <p>
             Growing believers through sound biblical teaching,
@@ -1044,11 +1120,14 @@
         <img
           class="programme-img"
           src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=900&q=80"
-          alt="Community Outreach">
+          alt="Community Outreach"
+        >
 
         <div class="programme-content">
 
-          <h3>Outreach & Evangelism</h3>
+          <h3>
+            Outreach & Evangelism
+          </h3>
 
           <p>
             Taking the message and love of Jesus Christ
@@ -1269,9 +1348,13 @@
 
       <div class="contact-card">
 
-        <div class="icon">📍</div>
+        <div class="icon">
+          📍
+        </div>
 
-        <h3>Our Location</h3>
+        <h3>
+          Our Location
+        </h3>
 
         <p>
           Church Address<br>
@@ -1283,9 +1366,13 @@
 
       <div class="contact-card">
 
-        <div class="icon">📞</div>
+        <div class="icon">
+          📞
+        </div>
 
-        <h3>Call Us</h3>
+        <h3>
+          Call Us
+        </h3>
 
         <p>
           +234 XXX XXX XXXX<br>
@@ -1297,9 +1384,13 @@
 
       <div class="contact-card">
 
-        <div class="icon">✉️</div>
+        <div class="icon">
+          ✉️
+        </div>
 
-        <h3>Email Us</h3>
+        <h3>
+          Email Us
+        </h3>
 
         <p>
           info@godofnownowministry.org
@@ -1319,7 +1410,9 @@
 
       <div>
 
-        <h3>God of Now Now International Ministry</h3>
+        <h3>
+          God of Now Now International Ministry
+        </h3>
 
         <p>
           A place of faith, prayer, worship, restoration
@@ -1331,15 +1424,61 @@
 
       <div>
 
-        <h3>Quick Links</h3>
+        <h3>
+          Quick Links
+        </h3>
 
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#programmes">Ministries</a></li>
-          <li><a href="#sermons">Sermons</a></li>
-          <li><a href="#prayer">Prayer Request</a></li>
-          <li><a href="#give">Giving</a></li>
+
+          <li>
+            <a href="#home">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="#about">
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a href="#programmes">
+              Ministries
+            </a>
+          </li>
+
+          <li>
+            <a href="#sermons">
+              Sermons
+            </a>
+          </li>
+
+          <!-- GALLERY -->
+          <li>
+            <a href="gallery.html">
+              Gallery
+            </a>
+          </li>
+
+          <li>
+            <a href="#prayer">
+              Prayer Request
+            </a>
+          </li>
+
+          <li>
+            <a href="#give">
+              Giving
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              Contact
+            </a>
+          </li>
+
         </ul>
 
       </div>
@@ -1347,7 +1486,9 @@
 
       <div>
 
-        <h3>Service Times</h3>
+        <h3>
+          Service Times
+        </h3>
 
         <p>
           Sunday Worship<br>
@@ -1387,6 +1528,7 @@
   </a>
 
 
+  <!-- JAVASCRIPT -->
   <script>
 
     function toggleMenu() {
@@ -1398,17 +1540,19 @@
     }
 
 
-    document.querySelectorAll(".nav-links a").forEach(link => {
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach(link => {
 
-      link.addEventListener("click", () => {
+        link.addEventListener("click", () => {
 
-        document
-          .getElementById("navLinks")
-          .classList.remove("active");
+          document
+            .getElementById("navLinks")
+            .classList.remove("active");
+
+        });
 
       });
-
-    });
 
 
     function submitPrayer(event) {
